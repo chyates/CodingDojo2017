@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\bin\Debug\netcoreapp2.0\csharp_callingcard.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\bin\Debug\netcoreapp2.0\csharp_callingcard.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\bin\Debug\netcoreapp2.0\csharp_callingcard.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\bin\Debug\netcoreapp2.0\csharp_callingcard.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\bin\Debug\netcoreapp2.0\csharp_callingcard.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\obj\Debug\netcoreapp2.0\csharp_callingcard.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\obj\Debug\netcoreapp2.0\csharp_callingcard.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\obj\Debug\netcoreapp2.0\csharp_callingcard.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\obj\Debug\netcoreapp2.0\csharp_callingcard.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_callingcard\obj\Debug\netcoreapp2.0\csharp_callingcard.pdb

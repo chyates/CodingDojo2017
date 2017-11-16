@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\bin\Debug\netcoreapp2.0\csharp_survey.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\bin\Debug\netcoreapp2.0\csharp_survey.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\bin\Debug\netcoreapp2.0\csharp_survey.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\bin\Debug\netcoreapp2.0\csharp_survey.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\bin\Debug\netcoreapp2.0\csharp_survey.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\obj\Debug\netcoreapp2.0\csharp_survey.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\obj\Debug\netcoreapp2.0\csharp_survey.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\obj\Debug\netcoreapp2.0\csharp_survey.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\obj\Debug\netcoreapp2.0\csharp_survey.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_survey\obj\Debug\netcoreapp2.0\csharp_survey.pdb

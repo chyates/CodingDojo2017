@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+      <title>Number Game</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Welcome to the Number Game!</h1>
+        <h2>Can you guess the number I'm thinking of between 1 and 100?</h2>
+        <form action="/check", method="POST">
+            <input type="text" name="num_guess" placeholder="Enter a number..."><br><br>
+            <input type="submit">
+        </form><br><br><br>
+        {{session['result']}}<br><br>
+        {% if session['result'] == 'You got it!' %}
+        <a href="/reset">Play again!</a>
+        {% endif %}
+    </div>
+    </body>
+</html>

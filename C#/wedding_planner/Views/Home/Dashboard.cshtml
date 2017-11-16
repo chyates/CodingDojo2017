@@ -1,0 +1,26 @@
+@model wedding_planner.Models.Wedding
+
+<h1>Wedding Log</h1>
+<table>
+    <thead>
+        <tr>
+            <td>Wedding</td>
+            <td>Date</td>
+            <td>Guests</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var wedding in ViewBag.Weddings)
+        {
+            <tr>
+                <td>@wedding.Bride & @wedding.Groom</td>
+                <td>@wedding.Date</td>
+                <td>@ViewBag.Guests.Count()</td>
+                <td>Action</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<hr>
+<p><a href="/addWedding">Add Wedding</a> | <a href="/logout">Logout</a></p>

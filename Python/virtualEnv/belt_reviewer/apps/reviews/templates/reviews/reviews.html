@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Reviews</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>{{ book.title }}</h1>
+        <h3>by {{ book.author }}</h3>
+        <h2>Reviews:</h2>
+        {% for review in book.reviews.all %}
+            <p><strong>Posted on: {{ review.created_at }}</strong></p>
+            <p>"{{ review.content }}"</p>
+            <p>--from <a href="/users/{{review.reviewer.id}}">{{ review.reviewer.first_name }}</a>, {{ review.rating }} stars</p>
+            {% if review.reviewer.id == request.session.id %}
+                <a href="{{ review.id }}/delete">Delete</a><br><br>
+            {% endif %}
+        {% endfor %}
+        <form action="/books/{{ book.id }}/create" method="POST">
+            {% csrf_token %}
+            Add a review:<br><textarea name="review" cols="70" rows="6"></textarea><br><br>
+            Rating: <select name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+            <input type="submit" value="Submit review">
+        </form>
+        <hr>
+        <p><a href="{% url 'review:index' %}">Home</a> | <a href="">Logout</a></p>
+    </div>
+    </body>
+</html>

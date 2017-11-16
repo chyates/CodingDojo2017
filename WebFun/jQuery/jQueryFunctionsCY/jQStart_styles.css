@@ -1,0 +1,74 @@
+*{
+    width: 970px;
+    margin: auto;
+    background-color: grey;
+}
+
+h1{
+    text-align: center;
+    margin: 2px;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: purple;
+}
+
+h2{
+    background-color: purple;
+    width: 190px;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+p{
+    background-color: purple;
+    width: 190px;
+    margin: 2px;
+    padding: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+button{
+    background-color: white;
+    width: 190px;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+.slide-up {
+    background-color: purple;
+    width: 190px;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+.ac-1{
+    background-color: white;
+    padding: 2px;
+}
+
+ #attr{
+    background-color: purple;
+    padding: 5px;
+} 
+
+#val, input {
+    background-color: white;
+    width: 190px;
+    margin: 2px;
+}
+
+input, #p2{
+    width: 180px;
+    padding: 2px;
+}

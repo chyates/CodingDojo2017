@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Bike Marketplace</title>
+    </head>
+    <body>
+    <div class="container">
+      <h2>Bicycle Marketplace</h2>
+      <h3>Bike of the Day!</h3>
+      <hr>
+      <p *ngIf="!loggedIn"><a [routerLink]="['register']">New User? Register</a> | <a [routerLink]="['login']">Existing User? Log in</a></p>
+    </div>
+    <router-outlet></router-outlet>
+    </body>
+</html>
+

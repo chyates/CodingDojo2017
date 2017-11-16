@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Enter your information</h1>
+
+<form action="/process" method="POST">
+    First Name: <input type="text" name="firstName" placeholder="First Name"><br><br>
+    Last Name: <input type="text" name="lastName" placeholder="Last Name"><br><br>
+    Age: <input type="number" name="age" placeholder="Age"><br><br>
+    Email: <input type="email" name="email" placeholder="Email"><br><br>
+    Password: <input type="password" name="password" placeholder="Password"><br><br>
+    <input type="submit" value="Submit">
+</form>

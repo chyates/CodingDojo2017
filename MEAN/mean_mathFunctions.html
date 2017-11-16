@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script>
+        
+            function zeroNegativity(arr){
+                let neg = true;
+                for (i=0; i<arr.length; i++){
+                    if (arr[i] < 0){
+                    neg = false;
+                    }
+                }
+                return neg;
+            }
+            
+            zeroNegativity([1,-3,5,9]);
+            
+            function isEven(num){
+                let even = false;
+                if (num % 2 === 0){
+                    even = true;
+                }
+                return even;
+            }
+            
+            isEven(22);
+            
+            function howManyEven(arr){
+                let evenCount = 0;
+                for (var i=0; i<arr.length; i++){
+                    if (arr[i] % 2 === 0){
+                    evenCount++;
+                    }
+                }
+                return evenCount;
+              }
+              
+            howManyEven([1,3,5,8,4,12]);
+            
+            function createDummyArray(num){
+                let arr = [];
+                for (i=0;i<=num; i++){
+                    arr.push(Math.floor(Math.random()*9));
+                }
+                return arr;
+              }
+              
+            createDummyArray(7);
+            
+            function randomChoice(arr){
+                let result = arr[Math.floor(Math.random()*(arr.length))];
+                return result;
+              }
+              
+            randomChoice([1,3,5,7,2,9]);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Dojo League";
+}
+
+@model dojoLeague.Models.Wrapper
+
+@if(Model != null)
+{
+    <h1>Registered Ninjas:</h1>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Ninja Name</th>
+                <th>Home Dojo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var ninja in Model.Ninjas)
+            {
+            <tr>
+                <td><a href="/ninjas/@ninja.Id">@ninja.Name</a></td>
+                <td>@ninja.DojoName</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+<hr>
+<p><a href="/ninjas/new">Register a ninja</a> | <a href="/dojos/new">Add a dojo</a> | <a href="/dojos">All dojos</a></p>

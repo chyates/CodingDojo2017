@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\obj\Debug\netcoreapp2.0\csharp_portfolio.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\obj\Debug\netcoreapp2.0\csharp_portfolio.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\obj\Debug\netcoreapp2.0\csharp_portfolio.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\bin\Debug\netcoreapp2.0\csharp_portfolio.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\bin\Debug\netcoreapp2.0\csharp_portfolio.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\bin\Debug\netcoreapp2.0\csharp_portfolio.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\bin\Debug\netcoreapp2.0\csharp_portfolio.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\bin\Debug\netcoreapp2.0\csharp_portfolio.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\obj\Debug\netcoreapp2.0\csharp_portfolio.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_portfolio\obj\Debug\netcoreapp2.0\csharp_portfolio.pdb

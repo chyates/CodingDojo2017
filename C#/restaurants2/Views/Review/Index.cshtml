@@ -1,0 +1,38 @@
+@model restaurants2.Models.Review
+
+<h1>Write a new Review:</h1>
+
+<form action="/addReview" method="POST">
+    <label for="Reviewer">Reviewer Name:</label>
+    <input asp-for="Reviewer" type="text" name="reviewer" placeholder="Enter your name"><br>
+    <span asp-validation-for="Reviewer"></span><br>
+
+    <label for="Restaurant">Restaurant Name: </label>
+    <input asp-for="Restaurant" name="restaurant" type="text" placeholder="Which restaurant did you visit?"><br>
+    <span asp-validation-for="Restaurant"></span><br>
+
+    <label for="ReviewContent">Review: </label><br>
+    <textarea asp-for="ReviewContent" name="reviewContent" rows="4" cols="50" placeholder="How was your experience?"></textarea>
+    <span asp-validation-for="ReviewContent"></span><br>
+
+    <label for="VisitDate">Date of Visit</label>
+    <input asp-for="VisitDate" name="visitDate" type="date"><br>
+    <span asp-validation-for="VisitDate"></span><br>
+
+    @if(TempData["InvalidDate"] != null)
+    {
+        <li>@TempData["InvalidDate"]</li>
+    }
+
+    <label for="Rating">Stars:</label>
+    <select asp-for="Rating" name="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select><br>
+    <span asp-validation-for="Rating"></span><br>
+
+    <input type="submit" value="Add review">
+</form>

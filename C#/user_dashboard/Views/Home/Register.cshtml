@@ -1,0 +1,28 @@
+@model user_dashboard.Models.RegisterViewModel
+
+<h1>Register</h1>
+<h3>Or, returning users: click <a href="/register">here </a>to log in!</h3>
+
+<form action="" method="POST">
+    <label for="FirstName">First Name:</label>
+    <input asp-for="FirstName" type="text" name="FirstName">
+    <span asp-validation-for="FirstName"></span>
+
+    <label for="LastName">Last Name:</label>
+    <input asp-for="LastName" type="text" name="LastName">
+    <span asp-validation-for="LastName"></span>
+
+    <label for="Email">Email:</label>
+    <input asp-for="Email" type="Email" name="Email">
+    <span asp-validation-for="Email"></span>
+
+    <label for="Password">Password:</label>
+    <input asp-for="Password" type="password" name="Password">
+    <span asp-validation-for="Password"></span>
+
+    <label for="ConfirmPassword">Confirm Password:</label>
+    <input asp-for="ConfirmPassword" type="password" name="ConfirmPassword"><br>
+    <span asp-validation-for="ConfirmPassword"></span>
+
+    <input type="submit" name="Register!">
+</form>

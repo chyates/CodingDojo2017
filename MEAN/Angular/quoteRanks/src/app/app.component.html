@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Registration Homepage</title>
+</head>
+<body>
+  <div class="container">
+    <h2>{{ title }}</h2>
+    <form #quoteForm="ngForm" (submit)="addQuote()">
+      Text: <br><textarea id="content" name="content" cols="60" rows="5" required minlength="4" [(ngModel)]="quote.content" #content="ngModel"></textarea><br><br> 
+      Author: <br><input type="text" id="author" name="author" minlength="1" required [(ngModel)]="quote.author" #author="ngModel"><br><br>
+      <input type="submit" class="quoteButton"  value="Add Quote">
+    </form>
+    <ul>
+      <li *ngIf="content.errors.required">Quote text is required</li>
+      <li *ngIf="content.errors.minlength && !content.errors.required">Quote text must be at least 4 characters</li>
+      <li *ngIf="author.errors.required">Quotes must have an author</li>
+      <li *ngIf="author.errors.minlength && !author.errors.required">Author names must be at least one character</li>
+    </ul>
+    <hr>
+    <h2>Quotes</h2>
+    <app-quotes *ngFor="let item of quotes; let i=index"
+    [content]="item.content"
+    [author]="item.author"
+    [rating]="item.rating"
+    [index]="i"
+    (voteUp)="upRating($event)"
+    (voteDown)="downRating($event)"></app-quotes>
+    <hr>
+  </div>
+  </body>
+</html>

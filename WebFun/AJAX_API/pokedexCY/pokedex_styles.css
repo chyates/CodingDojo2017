@@ -1,0 +1,84 @@
+*{
+    width: 1200px;
+    margin: 5px;
+}
+
+#main{
+    width: 1200px;
+}
+
+#first-gen{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 25px;
+    margin-left: 25px;
+    background-color: blue;
+    color: goldenrod;
+    border-radius: 10px;
+    border-style: none;
+}
+
+h2{
+    width: 700px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#catch{
+    display: inline-block;
+    vertical-align: top;
+    width: 775px;
+}
+
+#catch img{
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#deck{
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px dashed red;
+    margin: 100px 0px 0px 0px;
+}
+
+#deck-title{
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+.info{
+    width: 300px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#pokeball img{
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 100px;
+}
+
+.info{
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#type, #height, #weight{
+    width: 250px;
+    height: 100px;
+    margin: 5px;
+}

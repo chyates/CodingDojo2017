@@ -1,0 +1,23 @@
+<html>
+        <body>
+            <h1>Students</h1>
+            <ul id="main">
+                <!-- this is empty-->
+            </ul> 
+        <script>
+            // should return all elements in array as <li>
+            function appendList(array, id){
+                let i=0;
+                while(i<array.length){
+                    let name = "<li>"+array[i]+"</li>";
+                    document.getElementById(id).innerHTML += name;
+                    i++;
+                }
+            };
+            let students = ["Jeff", "Jenny", "Javier", "Joslyn", "Joe", "Jane", "Django"];
+            let target_id = "main";
+            appendList(students, target_id);
+        </script>   
+        </body>
+        </html>
+        

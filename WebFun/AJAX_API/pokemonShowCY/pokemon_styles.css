@@ -1,0 +1,14 @@
+*{
+    margin: 5px;
+}
+
+#catch {
+    display: inline-block;
+    vertical-align: top;
+    width: 1200px;
+    margin: 5px;
+}
+
+#first-gen {
+    display: block;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>User's Books</title>
+    </head>
+    <body>
+    <div class="container">
+        <div id="three-books">
+            <h1> Welcome {{ user.first_name }}!</h1>
+            <h2> Recent Book Reviews:</h2>
+            {% for review in limit_reviews %}
+            <a href="/books/{{review.book.id}}">{{ review.book.title }}</a>
+            <p><a href="/users/{{review.reviewer.id}}">{{ review.reviewer.first_name }}</a> says: "{{ review.content }}"</p>
+            <p>--{{ review.rating }} stars</p>
+            {% if review.reviewer.id == request.session.id %}
+            <a href="{{ review.id }}/delete">Delete</a><br><br>
+            {% endif %}
+            {% endfor %}
+            <p><a href="/books/add">Add Book and Review</a> | <a href="{% url 'user:logout' %}">Logout</a></p>
+        </div>
+        <div id="other-books">
+            <h2>Other Books With Reviews:</h2>
+            {% for review in more_reviews %}
+                <a href="/books/{{review.book.id}}">{{ review.book.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+    </body>
+</html>

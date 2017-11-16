@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Specific Ninja</title>
+    </head>
+    <body>
+    <div class="container">
+          {% if color == 'purple': %}
+          <img src="{{ url_for('static', filename='donatello.jpg') }}">
+          {% elif color == 'blue' %}
+          <img src="{{ url_for('static', filename='leonardo.jpg') }}">
+          {% elif color == 'orange' %}
+          <img src="{{ url_for('static', filename='michelangelo.jpg') }}">
+          {% elif color == 'red' %}
+          <img src="{{ url_for('static', filename='raphael.jpg') }}">
+          {% else %}
+          <img src="{{ url_for('static', filename='notapril.jpg') }}">
+          {% endif %}
+    </div>
+    </body>
+</html>
+
+<!--if color is purple:
+        display donatello.jpg
+    elif color is red:
+        display raphael.jpg
+    elif color is blue:
+        display leonardo.jpg
+    elif color is orange:
+        display michelangelo.jpg
+    else:
+        display notapril.jpg -->

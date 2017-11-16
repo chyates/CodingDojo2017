@@ -1,0 +1,175 @@
+*{
+    width: 970px;
+    margin: 0px;
+    border: 1px solid red;
+}
+
+#header {
+    width: 970px;
+    font-family: arial;
+}
+
+#header img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header h1, #header h2{
+    vertical-align: top;
+    width: 400px;
+}
+
+#header h1{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#container {
+    vertical-align: top;
+}
+
+.side {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+#ad{
+    width: 190px;
+}
+
+#resources {
+    width: 190px;
+}
+
+#resources h3, #resources h4{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#resources button{
+    width: 150px;
+    height: 50px;
+}
+
+#main-content {
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sub-header {
+    width: 700px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#left-block {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#left-block img{
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+}
+
+#left-block p{
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#right-block{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#right-block img{
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+}
+
+.right-text {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-text p{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+}
+
+#text-body{
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#text-body img{
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#chunk-1{
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#chunk-1 h3, #chunk-1 p, #chunk-1 ul, #chunk-1 li{
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#chunk-2{
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#chunk-2 h3, #chunk-2 p, #chunk-2 ol, #chunk-2 li{
+    width: 550px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer {
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#foot-text {
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#foot-text h3, #foot-text p{
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}

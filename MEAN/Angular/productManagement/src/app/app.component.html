@@ -1,0 +1,12 @@
+<p><a (click)="reset()" [routerLink]="['']">Home</a> | <a (click) = "list()" [routerLink]="['products']">Product List</a> | <a (click)="create()" [routerLink]="['new']">Product Creation</a></p>
+<div *ngIf="productList === true">
+  Sample product
+</div>
+
+<div *ngIf="productCreate === true && productList === false">
+  <form>
+    Sample product add: <input type="text" name="productName"><br><br>
+    <input type="submit" value="Add product">
+  </form>
+</div>
+<router-outlet></router-outlet>

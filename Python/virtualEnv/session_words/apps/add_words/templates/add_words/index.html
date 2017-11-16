@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% load static %}
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+      <title>Session Words</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Add a New Word</h1>
+        <form action="/add_word" method="POST">
+            {% csrf_token %}
+            <input type="text" name="word"><br><br>
+            <input type="radio" name="color" value="red">Red<br>
+            <input type="radio" name="color" value="green">Green<br>
+            <input type="radio" name="color" value="blue">Blue<br><br><br>
+            <input type="checkbox" name="size" value="big">show in BIG font!<br><br>
+            <input type="submit" value="Add to Session">
+        </form>
+        <hr/>
+            <a href="/reset" method="POST">Reset Session</a>
+            {% for word in request.session.words %}
+                {% if word.size == 'big' %}
+                    {% if word.color == 'red' %}
+                    <p class="big red">{{ word.word }} added at: {{ word.time }}</p>
+                    {% elif word.color == 'green' %}
+                        <p class="big green">{{ word.word }} added at: {{ word.time }}</p>
+                    {% elif word.color == 'blue' %}
+                        <p class="big blue">{{ word.word }} added at: {{ word.time }}</p>
+                    {% endif %}
+                {% elif word.size == 'none' %}
+                    {% if word.color == 'red' %}
+                        <p class="red">{{ word.word }} added at: {{ word.time }}</p>
+                    {% elif word.color == 'green' %}
+                        <p class="green">{{ word.word }} added at: {{ word.time }}</p>
+                    {% elif word.color == 'blue' %}
+                        <p class="blue">{{ word.word }} added at: {{ word.time }}</p>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+    </div>
+    </body>
+</html>

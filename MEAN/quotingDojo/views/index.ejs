@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Homepage</title>
+    </head>
+    <body>
+    <div class="container">
+        <form action="/addQuote" method="POST">
+            Your name: <input type="text" name="name" placeholder="Enter your name"><br><br>
+            Your Quote: <br><textarea name="quote" cols="10" rows="5" placeholder="Enter your quote"></textarea><br><br>
+            <input type="Submit" value="Add Quote">
+        </form>
+        <a href="/quotes">Skip to Quotes</a>
+    </div>
+    </body>
+</html>

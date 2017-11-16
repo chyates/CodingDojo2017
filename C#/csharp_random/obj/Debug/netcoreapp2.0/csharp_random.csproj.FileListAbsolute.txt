@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_random\bin\Debug\netcoreapp2.0\csharp_random.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_random\bin\Debug\netcoreapp2.0\csharp_random.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_random\bin\Debug\netcoreapp2.0\csharp_random.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_random\bin\Debug\netcoreapp2.0\csharp_random.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_random\bin\Debug\netcoreapp2.0\csharp_random.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_random\obj\Debug\netcoreapp2.0\csharp_random.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_random\obj\Debug\netcoreapp2.0\csharp_random.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_random\obj\Debug\netcoreapp2.0\csharp_random.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_random\obj\Debug\netcoreapp2.0\csharp_random.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_random\obj\Debug\netcoreapp2.0\csharp_random.pdb

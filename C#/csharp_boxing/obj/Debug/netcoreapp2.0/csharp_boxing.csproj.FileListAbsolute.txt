@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\bin\Debug\netcoreapp2.0\csharp_boxing.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\bin\Debug\netcoreapp2.0\csharp_boxing.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\bin\Debug\netcoreapp2.0\csharp_boxing.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\bin\Debug\netcoreapp2.0\csharp_boxing.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\bin\Debug\netcoreapp2.0\csharp_boxing.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\obj\Debug\netcoreapp2.0\csharp_boxing.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\obj\Debug\netcoreapp2.0\csharp_boxing.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\obj\Debug\netcoreapp2.0\csharp_boxing.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\obj\Debug\netcoreapp2.0\csharp_boxing.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_boxing\obj\Debug\netcoreapp2.0\csharp_boxing.pdb

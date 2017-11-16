@@ -1,0 +1,10 @@
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\bin\Debug\netcoreapp2.0\csharp_coll.deps.json
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\bin\Debug\netcoreapp2.0\csharp_coll.runtimeconfig.json
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\bin\Debug\netcoreapp2.0\csharp_coll.runtimeconfig.dev.json
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\bin\Debug\netcoreapp2.0\csharp_coll.dll
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\bin\Debug\netcoreapp2.0\csharp_coll.pdb
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\obj\Debug\netcoreapp2.0\csharp_coll.csproj.CoreCompileInputs.cache
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\obj\Debug\netcoreapp2.0\csharp_coll.AssemblyInfoInputs.cache
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\obj\Debug\netcoreapp2.0\csharp_coll.AssemblyInfo.cs
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\obj\Debug\netcoreapp2.0\csharp_coll.dll
+C:\Users\chyat\Desktop\Dojo\C#\csharp_coll\obj\Debug\netcoreapp2.0\csharp_coll.pdb

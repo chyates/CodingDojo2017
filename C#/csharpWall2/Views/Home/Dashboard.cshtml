@@ -1,0 +1,43 @@
+@model csharpWall2.Models.Wrapper
+
+<h1>Coding Dojo Wall</h1>
+<h3>Welcome, @ViewBag.User.FirstName!</h3>
+
+<form action="/post" method="POST">
+    Add a post: <br> <textarea rows="7" cols="50" name="postText" placeholder="What do you want to say?"></textarea><br><br>
+    <input type="submit" value="Post a message">
+</form>
+
+
+@if (Model != null)
+{ 
+    foreach(var post in Model.Posts)
+    {
+        <h5>@post.User.FirstName - @post.CreatedAt:</h5>
+        <p>@post.PostText</p>
+        <form action="/@post.PostId/comment" method="POST">
+            Add a comment: <br> <textarea rows="3" cols="40" name="commentText" placeholder="Add a comment"></textarea><br><br>
+            <input type="submit" value="Add a comment">
+        </form>
+        @if (post.UserId == ViewBag.User.UserId)
+        {
+            <a href="/post/@post.PostId/delete">Delete</a>
+        }
+        @foreach(var comment in post.Comments)
+        {
+            <li>@comment.User.FirstName - @comment.CreatedAt:</li>
+            <p>@comment.CommentText</p>
+        }
+    }
+}
+
+@if (TempData["PostError"] != null)
+{
+    <li>@TempData["PostError"]</li>
+}
+
+@if (TempData["CommentError"] != null)
+{
+    <li>@TempData["CommentError"]</li>
+}
+    

@@ -1,0 +1,9 @@
+#t1 {
+    width: 900px;
+    /* height: 300px; */
+}
+ #t1 tr th{
+    border: 2px solid black;
+    height: 50px;
+    width: 300px;
+    } 

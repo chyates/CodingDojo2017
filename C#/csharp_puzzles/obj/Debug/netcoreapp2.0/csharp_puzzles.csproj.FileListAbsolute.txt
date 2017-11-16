@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\bin\Debug\netcoreapp2.0\csharp_puzzles.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\bin\Debug\netcoreapp2.0\csharp_puzzles.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\bin\Debug\netcoreapp2.0\csharp_puzzles.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\bin\Debug\netcoreapp2.0\csharp_puzzles.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\bin\Debug\netcoreapp2.0\csharp_puzzles.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\obj\Debug\netcoreapp2.0\csharp_puzzles.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\obj\Debug\netcoreapp2.0\csharp_puzzles.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\obj\Debug\netcoreapp2.0\csharp_puzzles.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\obj\Debug\netcoreapp2.0\csharp_puzzles.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_puzzles\obj\Debug\netcoreapp2.0\csharp_puzzles.pdb

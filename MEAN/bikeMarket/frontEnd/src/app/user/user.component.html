@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Bike Manager</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Register:</h3>
+    <form #regForm="ngForm" (submit)="register()">
+      First Name: <input type="text"
+      name="firstName"
+      required
+      minlength="2"
+      [(ngModel)]="user.firstName"
+      #firstName = "ngModel"
+      placeholder="Enter your first name"><br><br>
+      <li *ngIf="!firstName.untouched && firstName.errors?.required">First name is required</li>
+      <li *ngIf="!firstName.errors?.required && firstName.errors?.minlength">First name must be more than 2 characters</li>
+      
+      Last Name: <input type="text"
+      name="lastName"
+      required
+      minlength="2"
+      [(ngModel)]="user.lastName"
+      #lastName = "ngModel"
+      placeholder="Enter your last name"><br><br>
+      <li *ngIf="!lastName.untouched && lastName.errors?.required">Last name is required</li>
+      <li *ngIf="!lastName.errors?.required && lastName.errors?.minlength">Last name must be more than 2 characters</li>
+      
+      Email: <input type="email"
+      name="email"
+      required
+      minlength="2"
+      [(ngModel)]="user.email"
+      #email = "ngModel"
+      placeholder="Enter your email"><br><br>
+      <li *ngIf="!email.untouched && email.errors?.required">Email is required</li>
+      <li *ngIf="!email.errors?.required && email.errors?.minlength">Email must be more than 2 characters</li>
+      
+      Password: <input type="password"
+      name="password"
+      required
+      minlength="8"
+      [(ngModel)]="user.password"
+      #password = "ngModel"
+      placeholder="Enter a password"><br><br>
+      <li *ngIf="!password.untouched && password.errors?.required">Password is required</li>
+      <li *ngIf="!password.errors?.required && password.errors?.minlength">Password must be more than 8 characters</li>
+      
+      Confirm Password: <input type="password"
+      name="confirmPassword"
+      required
+      [(ngModel)]="user.confirmPassword"
+      #confirmPassword = "ngModel"
+      placeholder="Confirm password"><br>
+      <li *ngIf="!confirmPassword.untouched && confirmPassword.errors?.required">You must confirm your password</li>
+      <li *ngIf="!confirmPassword.errors?.required && user.password !== user.confirmPassword">Passwords must match</li>
+      <br>
+
+      <input type="submit" value="Register!">
+    </form>
+    <br><br>
+    <h3>Login:</h3>
+    <form #logForm="ngForm" (submit)="login()">
+      Email: <input type="logEmail"
+      name="email"
+      placeholder="Enter email"><br><br>
+
+      Password: <input type="password"
+      name="logPassword" 
+      placeholder="Enter password"><br><br>
+      <input type="submit" value="Log In">
+    </form>
+    
+  </div>
+</body>
+
+</html>

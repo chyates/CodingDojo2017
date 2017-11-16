@@ -1,0 +1,155 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\chyat>cd desktop
+
+C:\Users\chyat\Desktop>md DojoAssignments
+
+C:\Users\chyat\Desktop>cd DojoAssignments
+
+C:\Users\chyat\Desktop\DojoAssignments>md WebFundamentals
+
+C:\Users\chyat\Desktop\DojoAssignments>md Python
+
+C:\Users\chyat\Desktop\DojoAssignments>md MEAN
+
+C:\Users\chyat\Desktop\DojoAssignments>md Ruby
+
+C:\Users\chyat\Desktop\DojoAssignments>md iOS
+
+C:\Users\chyat\Desktop\DojoAssignments>md netCore
+
+C:\Users\chyat\Desktop\DojoAssignments>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat\Desktop\DojoAssignments
+
+07/18/2017  05:01 PM    <DIR>          .
+07/18/2017  05:01 PM    <DIR>          ..
+07/18/2017  05:01 PM    <DIR>          iOS
+07/18/2017  05:01 PM    <DIR>          MEAN
+07/18/2017  05:01 PM    <DIR>          netCore
+07/18/2017  05:01 PM    <DIR>          Python
+07/18/2017  05:01 PM    <DIR>          Ruby
+07/18/2017  05:01 PM    <DIR>          WebFundamentals
+               0 File(s)              0 bytes
+               8 Dir(s)  460,451,033,088 bytes free
+
+C:\Users\chyat\Desktop\DojoAssignments>cd WebFundamentals
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd Python
+
+C:\Users\chyat\Desktop\DojoAssignments\Python>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\Python>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd MEAN
+
+C:\Users\chyat\Desktop\DojoAssignments\MEAN>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\MEAN>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd Ruby
+
+C:\Users\chyat\Desktop\DojoAssignments\Ruby>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\Ruby>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd iOS
+
+C:\Users\chyat\Desktop\DojoAssignments\iOS>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\iOS>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd netCore
+
+C:\Users\chyat\Desktop\DojoAssignments\netCore>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\netCore>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd WebFundamentals
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>md Git
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>md HTML
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>md CSS
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>md Javascript
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments>cd WebFundamentals
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd Git
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Git>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Git>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd HTML
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd CSS
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\CSS>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\CSS>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd Javascript
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Javascript>copy NUL about.txt
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Javascript>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd HTML
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML>copy NUL indentation.html
+        1 file(s) copied.
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML>cd ..
+
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals>cd..
+
+C:\Users\chyat\Desktop\DojoAssignments>dir /b /s
+C:\Users\chyat\Desktop\DojoAssignments\iOS
+C:\Users\chyat\Desktop\DojoAssignments\MEAN
+C:\Users\chyat\Desktop\DojoAssignments\netCore
+C:\Users\chyat\Desktop\DojoAssignments\Python
+C:\Users\chyat\Desktop\DojoAssignments\Ruby
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals
+C:\Users\chyat\Desktop\DojoAssignments\iOS\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\MEAN\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\netCore\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\Python\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\Ruby\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\CSS
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Git
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Javascript
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\CSS\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Git\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML\about.txt
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\HTML\indentation.html
+C:\Users\chyat\Desktop\DojoAssignments\WebFundamentals\Javascript\about.txt
+
+C:\Users\chyat\Desktop\DojoAssignments>

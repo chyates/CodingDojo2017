@@ -1,0 +1,16 @@
+*{
+    width: 1000px;
+    margin: 10px;
+}
+
+#author {
+    width: 500px;
+}
+
+#content {
+    width: 500px;
+}
+
+.quoteButton {
+    width: 100px;
+}

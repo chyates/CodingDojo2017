@@ -1,0 +1,25 @@
+@model dojoLeague.Models.Wrapper
+
+@if(Model != null)
+{
+    <h1>Registered Dojos:</h1>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Dojo Name</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var dojo in Model.Dojos)
+            {
+            <tr>
+                <td><a href="/dojos/@dojo.Id">@dojo.Name</a></td>
+                <td>@dojo.Location</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+<hr>
+<p><a href="/">Home</a> | <a href="/ninjas/new">Register a ninja</a> | <a href="/dojos/new">Add a dojo</a></p>

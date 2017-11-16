@@ -1,0 +1,12 @@
+*{
+    width: 900px;
+    font-family: 'cambria';
+    font-size: 24pt;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}

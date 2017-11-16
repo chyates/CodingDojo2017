@@ -1,0 +1,178 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    background-color: #6070D9;
+    width: 970px;
+    margin: 0px auto;
+}
+
+#top{
+    padding: 15px;
+}
+
+#head img{
+    width: 375px;
+}
+
+#head-right {
+    display: inline-block;
+    height: 20px;
+    margin-left: 240px;
+    text-align: center;
+    vertical-align: top;
+    color: whitesmoke;
+}
+
+#head-right a{
+    display: inline-block;
+    text-decoration:none;
+    color: goldenrod;
+}
+
+#head-right p{
+    display:inline-block;
+}
+
+#head-right span{
+    color: black;
+}
+
+#head-search{
+    display: inline-block;
+    position: relative;
+    left: 600px;
+    bottom: 90px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #444444;
+    padding: 15px 7px 4px 10px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#head-search input{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid silver;
+    box-shadow: 1px 1px 1px black;
+}
+
+#head-search button{
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background-color: #245176;
+    box-shadow: 1px 1px 1px black;
+}
+
+#navwrap {
+    width: 800px;
+    list-style: none;
+    background-color: navy;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 16pt;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navwrap a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#sidenav {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    margin: 15px;
+    text-align: center;
+    padding: 0px;
+}
+
+#sidenav ul li{
+    list-style-type: none;
+    padding: 3px;
+}
+
+#sidenav a{
+    color: white;
+    text-decoration: underline;
+}
+
+#meat {
+    display: inline-block;
+    width: 650px;
+    vertical-align: top;
+    margin: 15px;
+    text-align: center;
+    padding: 0px;
+    color: white;
+}
+
+#meat h3{
+    color: gold;
+    font-style: italic;
+    padding: 5px;
+}
+
+#refbar{
+    background-color: whitesmoke;
+}
+
+.reflinks {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    border-top: 5px solid cornflowerblue;
+}
+
+.reflinks a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.reflinks p{
+    padding: 5px;
+}
+
+#footer {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    color: #B0B8E9;
+}
+
+#footer ul{
+    list-style: none;
+    margin: 5px;
+}
+
+#footer li{
+    display: inline;
+    padding: 30px;
+    margin: 10px;
+}
+
+#footer a{
+    color: #B0B8E9;
+    text-decoration: none;
+}
+
+#footer p{
+    margin: 5px;
+    padding: 10px;
+    font-size: 9pt;
+}

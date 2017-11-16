@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_time\bin\Debug\netcoreapp2.0\csharp_time.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_time\bin\Debug\netcoreapp2.0\csharp_time.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_time\bin\Debug\netcoreapp2.0\csharp_time.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_time\bin\Debug\netcoreapp2.0\csharp_time.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_time\bin\Debug\netcoreapp2.0\csharp_time.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_time\obj\Debug\netcoreapp2.0\csharp_time.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_time\obj\Debug\netcoreapp2.0\csharp_time.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_time\obj\Debug\netcoreapp2.0\csharp_time.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_time\obj\Debug\netcoreapp2.0\csharp_time.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_time\obj\Debug\netcoreapp2.0\csharp_time.pdb

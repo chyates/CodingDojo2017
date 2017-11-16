@@ -1,0 +1,8 @@
+C:\Users\mikeb\Desktop\CDI\CSharp\web\bin\Debug\netcoreapp1.1\web.deps.json
+C:\Users\mikeb\Desktop\CDI\CSharp\web\bin\Debug\netcoreapp1.1\web.runtimeconfig.json
+C:\Users\mikeb\Desktop\CDI\CSharp\web\bin\Debug\netcoreapp1.1\web.runtimeconfig.dev.json
+C:\Users\mikeb\Desktop\CDI\CSharp\web\bin\Debug\netcoreapp1.1\web.dll
+C:\Users\mikeb\Desktop\CDI\CSharp\web\bin\Debug\netcoreapp1.1\web.pdb
+C:\Users\mikeb\Desktop\CDI\CSharp\web\obj\Debug\netcoreapp1.1\web.AssemblyInfo.cs
+C:\Users\mikeb\Desktop\CDI\CSharp\web\obj\Debug\netcoreapp1.1\web.dll
+C:\Users\mikeb\Desktop\CDI\CSharp\web\obj\Debug\netcoreapp1.1\web.pdb

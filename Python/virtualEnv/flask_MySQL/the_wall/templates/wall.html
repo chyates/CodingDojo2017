@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+      <title>User Homepage</title>
+    </head>
+    <body>
+    <div class="container">
+        {% if session['email'] %}
+        <h1>Welcome {{session['first_name']}}!</h1>
+        <form action="/add_message" method="POST">
+            <textarea rows="5" cols="80" name="message" placeholder="Write a message!"></textarea><br><br>
+            <input type="submit" value="Post Message">
+        </form>
+            {% for message in message_list %}
+                <h3>{{ message['first_name'] }} {{ message['last_name'] }} - {{ message.created_at}}</h3>
+                <p class="message-text">{{ message.message }}</p>
+                <form class="replies" action="/addReply/{{ message.id }}" method="POST">
+                    <textarea name="reply" rows="2" cols="80" placeholder="Add a reply"></textarea><br>
+                    <input type="submit" value="Reply">
+                </form>
+                    {% for reply in reply_list %}
+                        {% if reply['message_id'] == message['id'] %}
+                            <h5 class="reply-text">{{ reply['first_name']}} {{ reply['last_name'] }} - {{ reply.created_at }}</h5>
+                            <p class="reply-text">{{ reply.reply }}</p>
+                         {% endif %} 
+                    {% endfor %}
+            {% endfor %}
+        {% endif %}
+        <hr>
+        <a href="/logout">Log Out</a>
+    </div>
+    </body>
+</html>

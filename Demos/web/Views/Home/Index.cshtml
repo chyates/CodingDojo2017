@@ -1,0 +1,46 @@
+<h1>Create a baseball league</h1>
+
+<form action="/createTeam" method="POST">
+    <table>
+        <tr><td>City:</td><td><input type="text" name="city" value=""></td></tr>
+        <tr><td>Mascot:</td><td><input type="text" name="mascot" value=""></td></tr>
+        <tr><td>Wins:</td><td><input type="text" name="wins" value=""></td></tr>
+        <tr><td>Losses:</td><td><input type="text" name="losses" value=""></td></tr>
+    </table>
+
+    <input type="submit">
+</form>
+
+@{
+    object objLeague;
+    TempData.TryGetValue("TheLeague", out objLeague);
+
+    if(objLeague != null)
+    {
+        int place = 1;
+        
+        List<WebDemo.BaseballTeam> leagueList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<WebDemo.BaseballTeam>>((string)objLeague);
+
+        <table action="/processForm">
+            <tr>
+                <th>Place</th><th>City</th><th>Mascot</th><th>Wins</th><th>Losses</th>
+            </tr> 
+            
+            @foreach(var team in leagueList)
+            {
+                <tr>
+                    <td>@place</td>
+                    <td>@team.City</td>
+                    <td>@team.Mascot</td>
+                    <td>@team.Wins</td>
+                    <td>@team.Losses</td>
+                </tr>
+                place++;
+            }
+            
+        </table>
+
+        <a href="/reset">Start Over</a>
+    }
+}
+

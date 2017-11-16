@@ -1,0 +1,42 @@
+--------------------
+- OPTIONAL QUERY 1 -
+-------------------- 
+
+Display the Group Name of all groups that have members that are not from New York City
+var notNYC = Artists
+.Join(Groups, artist =>artist.GroupId, group => group.Id, (artist, group) => { artist.Group = group; return artist; })
+.Where(artist => artist.Hometown != "New York City" && artist.Group != null)
+.Select(artist => artist.Group.GroupName)
+.Distinct()
+.ToList();
+
+Line 6 --> set variable "notNYC" equal to query, starting at the Artists list
+Line 7 --> join the Artists list to the Groups list with lambda functions "artist" and "group", of which:
+                --artist compares on the value of artist.GroupId
+                --group compares on the value of group.Id 
+                --groupID is the foreign key in the artist list
+       --> combine the values with a lambda function where "group" is equal to artist.Group and return the artist
+Line 8 --> filter combined results where the artist Hometown is not NYC and the artist is part of a group
+Line 9 --> select the artist.Group.GroupName (ie. the group name for every artist returned in Where filter)
+Line 10 --> don't return any repeating values
+Line 11 --> turn the results into a list
+
+
+
+--------------------
+- OPTIONAL QUERY 2 -
+-------------------- 
+
+Display the artist names of all members of the group 'Wu-Tang Clan'
+var wuTangMembers = Groups
+.Where(group => group.GroupName == "Wu-Tang Clan")
+.GroupJoin(Artists, group => group.Id, artist => artist.GroupId, (group, artists) => {group.Members = artists.ToList(); return group;})
+.Single();
+
+Line 31 --> set variable "wuTangMembers" equal to query, starting at the Groups list
+Line 32 --> filter groups where the GroupName is equal to "Wu-Tang Clan"
+Line 33 --> group joins the group to the Artists list with lambda functions "group" and "artist", of which:
+                    --group compares on the value of group.Id
+                    --artist compares on the value of artist.GroupId
+        --> combine the values with a lambda function where group.Members is equal to artists represented as a list and return the group
+Line 34 --> treats the result (group.Members as a list of artists) as a single entity (???)

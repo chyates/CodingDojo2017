@@ -1,0 +1,31 @@
+@model weddings_2.Models.Wrapper
+<h1>Wedding Log Homepage</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guests</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@if (Model != null)
+{
+    @foreach (var wedding in Model.Weddings)
+    {
+        <tr>
+            <td>@wedding.WedderOne & wedding.WedderTwo</td>
+            <td>@wedding.Date</td>
+            @if (wedding.Guests != null)
+            {
+                <td>@wedding.Guests.Count</td>
+            }
+            <td>Action</td>>
+        </tr>
+    }
+}
+        </tbody>
+    </table>
+<hr>
+<p><a href="/">Home</a> | <a href="/addWedding">Add Wedding</a> | <a href="/logout">Logout</a></p>

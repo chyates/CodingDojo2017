@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>This Little Piggy</title>
+    </head>
+    <body>
+    <div class="container">
+        <h2>Name: <%= pig.name %></h2>
+        <p>Breed: <%= pig.breed %></p>
+        <p>Weight: <%= pig.weight %></p>
+        <p>Age: <%= pig.age %></p>
+        <p><a href="/">All pigs</a> | <a href="/pigs/<%= pig.id %>/delete>">Delete pig</a> | <a href="/pigs/<%= pig.id %>/edit">Edit pig</a></p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+@model woods2.Models.TrailViewModel
+
+<h2>Add a new Trail</h2>
+
+<form action="addTrail" method="POST">
+    <label for="TrailName">Trail Name</label>
+    <input asp-for="TrailName" type="text" name="trailName" placeholder="Enter a trail name"><br>
+    <span asp-validation-for="TrailName"></span><br>
+
+    <label for="Description">Description:</label><br>
+    <textarea rows="4" cols="50" name="Description" placeholder="Enter a description"></textarea><br>
+    <span asp-validation-for="Description"></span><br>
+
+    <label for="Length">Trail Length:</label>
+    <input asp-for="Length" type="number" name="Length"><br>
+    <span asp-validation-for="Length"></span><br>
+
+    <label for="Elevation">Elevation:</label>
+    <input asp-for="Elevation" type="number" name="Elevation"><br>
+    <span asp-validation-for="Elevation"></span><br>
+
+    <label for="Longitude">Longitude:</label>
+    <input asp-for="Longitude" type="number" step="any" name="longitude"> ° 
+
+    <select asp-for="LongDegree" name="longDegree">
+        <option value="E">E</option>
+        <option value="W">W</option>
+        </select><br>
+    <span asp-validation-for="LongDegree"></span><br>
+
+    <label for="Latitude">Latitude:</label>
+    <input asp-for="Latitude" type="number" step="any" name="latitude"> °
+
+    <select asp-for="LatDegree" name="latDegree">
+        <option value="N">N</option>
+        <option value="S">S</option>
+        </select><br>
+    <span asp-validation-for="LatDegree"></span><br>
+
+    <input type="submit" value="Create trail">
+</form>
+<hr>
+<a href="/">Go home</a>

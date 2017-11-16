@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Edit User Details</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Edit user #{{ user.id }}</h1>
+        <h3>Edit Information</h3>
+        <form action="/users/update">
+            {% csrf_token %}
+            First name: <br><input type="text" name="first_name" value="{{ user.first_name }}"><br><br>
+            Last name: <br><input type="text" name="last_name" value="{{ user.last_name }}"><br><br>
+            Email: <br><input type="email" name="email" value="{{ user.email }}"><br><br>
+            Password: <br><input type="password" name="password" placeholder="Password"><br><br>
+            Confirm password: <br><input type="password" name="password" placeholder="Confirm password"><br><br>
+            Admin level: <br><select name="admin_level" id="">
+                <option value="True">True</option>    
+                <option value="False">False</option>    
+            </select><br><br>
+            <input type="submit" value="Update">
+        </form>
+        <hr>
+        <p><a href="/dashboard">Return to Dashboard</a> | <a href="/logout">Log Out</a></p>
+    </div>
+    </body>
+</html>

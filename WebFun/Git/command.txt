@@ -1,0 +1,212 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\chyat>cd
+C:\Users\chyat
+
+C:\Users\chyat>md \test
+
+C:\Users\chyat>md test
+
+C:\Users\chyat>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat
+
+07/18/2017  04:40 PM    <DIR>          .
+07/18/2017  04:40 PM    <DIR>          ..
+07/17/2017  11:56 AM    <DIR>          .atom
+07/17/2017  06:40 AM    <DIR>          .vscode
+07/12/2017  07:24 PM    <DIR>          Contacts
+07/17/2017  03:25 PM    <DIR>          Desktop
+07/17/2017  04:31 PM    <DIR>          Documents
+07/18/2017  02:22 PM    <DIR>          Downloads
+07/12/2017  09:06 PM    <DIR>          Dropbox
+07/12/2017  07:24 PM    <DIR>          Favorites
+07/12/2017  07:28 PM    <DIR>          Links
+07/12/2017  08:54 PM    <DIR>          Music
+07/12/2017  08:39 PM    <DIR>          OneDrive
+07/12/2017  07:26 PM    <DIR>          Pictures
+07/12/2017  07:24 PM    <DIR>          Saved Games
+07/12/2017  07:26 PM    <DIR>          Searches
+07/18/2017  04:40 PM    <DIR>          test
+07/12/2017  07:24 PM    <DIR>          Videos
+               0 File(s)              0 bytes
+              18 Dir(s)  460,457,213,952 bytes free
+
+C:\Users\chyat>cd test
+
+C:\Users\chyat\test>cd \
+
+C:\>cd chyat
+The system cannot find the path specified.
+
+C:\>cd users
+
+C:\Users>cd chyat
+
+C:\Users\chyat>cd test
+
+C:\Users\chyat\test>copy NUL index.html
+        1 file(s) copied.
+
+C:\Users\chyat\test>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat\test
+
+07/18/2017  04:43 PM    <DIR>          .
+07/18/2017  04:43 PM    <DIR>          ..
+07/18/2017  04:43 PM                 0 index.html
+               1 File(s)              0 bytes
+               2 Dir(s)  460,457,148,416 bytes free
+
+C:\Users\chyat\test>copy NUL styles.css
+        1 file(s) copied.
+
+C:\Users\chyat\test>copy NUL commands.txt
+        1 file(s) copied.
+
+C:\Users\chyat\test>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat\test
+
+07/18/2017  04:44 PM    <DIR>          .
+07/18/2017  04:44 PM    <DIR>          ..
+07/18/2017  04:44 PM                 0 commands.txt
+07/18/2017  04:43 PM                 0 index.html
+07/18/2017  04:44 PM                 0 styles.css
+               3 File(s)              0 bytes
+               2 Dir(s)  460,457,078,784 bytes free
+
+C:\Users\chyat\test>copy index.html index_2.html
+        1 file(s) copied.
+
+C:\Users\chyat\test>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat\test
+
+07/18/2017  04:45 PM    <DIR>          .
+07/18/2017  04:45 PM    <DIR>          ..
+07/18/2017  04:44 PM                 0 commands.txt
+07/18/2017  04:43 PM                 0 index.html
+07/18/2017  04:43 PM                 0 index_2.html
+07/18/2017  04:44 PM                 0 styles.css
+               4 File(s)              0 bytes
+               2 Dir(s)  460,457,078,784 bytes free
+
+C:\Users\chyat\test>del styles.css
+
+C:\Users\chyat\test>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat\test
+
+07/18/2017  04:45 PM    <DIR>          .
+07/18/2017  04:45 PM    <DIR>          ..
+07/18/2017  04:44 PM                 0 commands.txt
+07/18/2017  04:43 PM                 0 index.html
+07/18/2017  04:43 PM                 0 index_2.html
+               3 File(s)              0 bytes
+               2 Dir(s)  460,457,078,784 bytes free
+
+C:\Users\chyat\test>cd ..
+
+C:\Users\chyat>md destination
+
+C:\Users\chyat>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat
+
+07/18/2017  04:48 PM    <DIR>          .
+07/18/2017  04:48 PM    <DIR>          ..
+07/17/2017  11:56 AM    <DIR>          .atom
+07/17/2017  06:40 AM    <DIR>          .vscode
+07/12/2017  07:24 PM    <DIR>          Contacts
+07/17/2017  03:25 PM    <DIR>          Desktop
+07/18/2017  04:48 PM    <DIR>          destination
+07/17/2017  04:31 PM    <DIR>          Documents
+07/18/2017  02:22 PM    <DIR>          Downloads
+07/12/2017  09:06 PM    <DIR>          Dropbox
+07/12/2017  07:24 PM    <DIR>          Favorites
+07/12/2017  07:28 PM    <DIR>          Links
+07/12/2017  08:54 PM    <DIR>          Music
+07/12/2017  08:39 PM    <DIR>          OneDrive
+07/12/2017  07:26 PM    <DIR>          Pictures
+07/12/2017  07:24 PM    <DIR>          Saved Games
+07/12/2017  07:26 PM    <DIR>          Searches
+07/18/2017  04:45 PM    <DIR>          test
+07/12/2017  07:24 PM    <DIR>          Videos
+               0 File(s)              0 bytes
+              19 Dir(s)  460,457,078,784 bytes free
+
+C:\Users\chyat>move C:\Users\chyat\test\index_2.html C:\Users\chyat\destination\index_2.html
+        1 file(s) moved.
+
+C:\Users\chyat>cd destination
+
+C:\Users\chyat\destination>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat\destination
+
+07/18/2017  04:52 PM    <DIR>          .
+07/18/2017  04:52 PM    <DIR>          ..
+07/18/2017  04:43 PM                 0 index_2.html
+               1 File(s)              0 bytes
+               2 Dir(s)  460,456,878,080 bytes free
+
+C:\Users\chyat\destination>rd /s C:\Users\chyat\destination
+C:\Users\chyat\destination, Are you sure (Y/N)? y
+The process cannot access the file because it is being used by another process.
+
+C:\Users\chyat\destination>cd test
+The system cannot find the path specified.
+
+C:\Users\chyat\destination>cd ..
+
+C:\Users\chyat>cd test
+
+C:\Users\chyat\test>rd /s C:\Users\chyat\destination
+C:\Users\chyat\destination, Are you sure (Y/N)? y
+
+C:\Users\chyat\test>cd ..
+
+C:\Users\chyat>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is D079-03A9
+
+ Directory of C:\Users\chyat
+
+07/18/2017  04:54 PM    <DIR>          .
+07/18/2017  04:54 PM    <DIR>          ..
+07/17/2017  11:56 AM    <DIR>          .atom
+07/17/2017  06:40 AM    <DIR>          .vscode
+07/12/2017  07:24 PM    <DIR>          Contacts
+07/17/2017  03:25 PM    <DIR>          Desktop
+07/17/2017  04:31 PM    <DIR>          Documents
+07/18/2017  02:22 PM    <DIR>          Downloads
+07/12/2017  09:06 PM    <DIR>          Dropbox
+07/12/2017  07:24 PM    <DIR>          Favorites
+07/12/2017  07:28 PM    <DIR>          Links
+07/12/2017  08:54 PM    <DIR>          Music
+07/12/2017  08:39 PM    <DIR>          OneDrive
+07/12/2017  07:26 PM    <DIR>          Pictures
+07/12/2017  07:24 PM    <DIR>          Saved Games
+07/12/2017  07:26 PM    <DIR>          Searches
+07/18/2017  04:52 PM    <DIR>          test
+07/12/2017  07:24 PM    <DIR>          Videos
+               0 File(s)              0 bytes
+              18 Dir(s)  460,456,480,768 bytes free
+
+C:\Users\chyat>

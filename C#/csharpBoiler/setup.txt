@@ -1,0 +1,36 @@
+Setup checklist:
+    - Change namespace in following files:
+        --Project.cs
+        --Startup.cs
+        --Controller.cs
+        --BaseEntity.cs
+        --Context.cs
+        --Model files
+    
+    - Change variable names to match Context and Controllers
+        --Context in Startup.cs file
+        --Controller in Controller.cs file (if you're changing from HomeController)
+            **IF you change name of controller, you must also change name of "Home" folder in Views to match**
+
+    - If necessary, change User validations on included RegViewModel
+
+    - Alter wrapper to include necessary models
+
+    - Change ViewData title in Index.cshtml
+        --Possibly alter validations depending on RegViewModel
+
+    - Change launch.json to netcore2.0 rather than netcore1.1 (if debugging doesn't work)
+
+
+PACKAGED WITHIN PARENT PROJECT FOLDER:
+- In Controller.cs file, alter as necessary:
+    --Login/reg functions in Index view
+    --Sample Dashboard view w/ logic to check for logged in user + if logged in, setup wrapper model and set session
+        ++ Check login logic now moved to separate function, same for hash password
+
+- In Models folder, alter as necessary:
+    --BaseEntity.cs
+    --Context.cs
+    --RegisterViewModel.cs
+    --User.cs
+    --Wrapper.cs

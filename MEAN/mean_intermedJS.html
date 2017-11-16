@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script>
+            // return a string of stars equal to the value of num, ie. starString(4) would return ****
+            function starString(num){
+                let star = "*";
+                while (num > 0){
+                    star += "*";
+                    num--;
+                }
+                return star;
+            }
+
+            starString(8);
+
+            // return a line of stars equal to value of each element in given array, ie. [1,2,3] should return * / ** / *** (where / is a new line break)
+            function drawStars(arr){
+                for (i=0;i<arr.length;i++){
+                  let star = "";
+                  var test = arr[i];
+                  while (test > 0){
+                    star += "*";
+                    test--;
+                  }
+                  console.log(star);
+                }
+              }
+              
+            drawStars([2,4,6,8]);
+
+            function drawStarsModified(arr){
+                for(i=0;i<arr.length;i++){
+                if(typeof arr[i] === "number"){
+                    let result = "";
+                    var num = arr[i];
+                    while (num > 0){
+                        result += "*";
+                        num--;
+                            }
+                console.log(result);
+                } else if (typeof arr[i] === "string"){
+                    let result = "";
+                    var strNum = arr[i].length;
+                        while (strNum > 0){
+                        result += arr[i][0];
+                        strNum--;
+                            }
+                    console.log(result.toLowerCase());
+                        }
+                    }
+                }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

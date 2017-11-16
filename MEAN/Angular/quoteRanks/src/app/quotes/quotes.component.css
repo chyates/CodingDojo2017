@@ -1,0 +1,27 @@
+.container {
+    width: 900px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info{
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+}
+
+.info p{
+    width: 400px;
+}
+
+.buttons {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+}
+
+.buttons button {
+    display: block;
+    width: 100px;
+}

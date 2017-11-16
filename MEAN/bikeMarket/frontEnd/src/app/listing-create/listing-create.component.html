@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Add a Listing</title>
+    </head>
+    <body>
+    <div class="container">
+      <h3>Add Listing:</h3>
+      <form #listForm="ngForm" (submit)="addListing()">
+        Title: <input type="text"
+        name="title"
+        required
+        minlength="4"
+        [(ngModel)]="listing.title"
+        #title="ngModel"
+        placeholder="Enter a title"><br><br>
+        <li *ngIf="!title.untouched && title.errors?.required">Title is required</li>
+        <li *ngIf="!title.errors?.required && title.errors?.minlength">Title must be at least 4 characters</li>
+
+        Description: <br><textarea cols="50" rows="4" 
+        name="desc"
+        required
+        maxlength="200"
+        [(ngModel)]="listing.desc"
+        #desc="ngModel" 
+        placeholder="Enter a description"></textarea><br><br>
+        <li *ngIf="!desc.errors?.required && desc.errors?.minlength">Description must be less than 200 characters</li>
+
+        Location: <input type="text"
+        name="location"
+        required
+        [(ngModel)]="listing.location"
+        #location="ngModel"
+        placeholder="Where are you selling from?"><br><br>
+        <li *ngIf="!location.untouched && location.errors?.required">Location is required</li>
+
+        Price: $<input type="number" 
+        name="price"
+        required
+        min="1"
+        [(ngModel)]="listing.price"
+        #price="ngModel"><br><br>
+        <li *ngIf="!price.untouched && price.errors?.required">Price is required</li>
+        <li *ngIf="!price.errors?.required && price.errors?.min">Price must be at least $1</li>
+
+        Image: <input type="text" 
+        name="image"
+        required
+        [(ngModel)]="listing.image"
+        #image="ngModel" 
+        placeholder="Enter URL"><br><br>
+        <li *ngIf="!image.untouched && image.errors?.required">Image URL is required</li>
+
+        <input type="submit" value="Create Listing">
+      </form>
+    </div>
+    </body>
+</html>

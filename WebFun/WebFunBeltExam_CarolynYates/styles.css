@@ -1,0 +1,241 @@
+*{
+    margin: 0px auto;
+    width: 970px;
+    font-family: sans-serif;
+    background-color: #1A1A1A;
+}
+
+#container{
+    border: 5px solid #121212;
+}
+
+#header{
+    width: 950px;
+    height: 90px;
+    margin: 10px;
+}
+
+#header img{
+    display: inline-block;
+    vertical-align: top; 
+    margin: 10px;
+    width: 200px;
+    height: 75px;
+}
+
+#header h4{
+    display: inline-block;
+    text-align: right;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 200px;
+    padding: 10px;
+    color: lightgrey;
+}
+
+#h-navbar {
+    width: 970px;
+    height: 50px;
+    background: #515151;
+    background: -webkit-linear-gradient(#515151, #2B2B2B);
+    background: -o-linear-gradient(#515151, #2B2B2B); 
+    background: -moz-linear-gradient(#515151, #2B2B2B); 
+    background: linear-gradient(#515151, #2B2B2B); 
+}
+
+#h-navbar button {
+    display: inline-block;
+    font-family: helvetica;
+    text-decoration: none;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    color: lightgrey;
+    width: 100px; 
+    height: 50px;
+    padding: 2px;
+    border: none;
+    background: #515151;
+    background: -webkit-linear-gradient(#515151, #2B2B2B);
+    background: -o-linear-gradient(#515151, #2B2B2B); 
+    background: -moz-linear-gradient(#515151, #2B2B2B); 
+    background: linear-gradient(#515151, #2B2B2B);
+}
+
+#h-navbar button span{
+    font-size: 5pt;
+    background: inherit; 
+}
+
+#head-info img{
+    border: 5px solid #313131;
+    width: 960px;
+}
+
+#content{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content-select{
+    display: inline-block;
+    vertical-align: top;
+    height:100px;
+    width: 200px;
+    margin: 10px;
+}
+
+.content-select img{
+    height: 40px;
+    width: 45px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.cs-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 115px;
+    height: 100px;
+}
+
+.cs-text h4{
+    vertical-align: top;
+    width: 100px; 
+    margin: 5px;
+    font-family: cambria;
+    font-size: 14pt;
+    color: #E36721;
+}
+
+.cs-text p{
+    vertical-align: top;
+    width: 100px; 
+    margin: 5px;
+    color: grey;
+    font-size: 10pt;
+}
+
+#ad{
+    display: inline-block;
+    vertical-align: top;
+    width: 970px;
+    background-color: #050505;
+}
+
+#ad-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    margin: 20px;
+    background-color: #050505;
+}
+
+#ad-text h3, #ad-text p{
+    text-align: left;
+    width: 600px;
+    display: block;
+    padding: 5px;
+    background-color: #050505;
+}
+
+#ad-text h3{
+    font-family: 'Trebuchet MS';
+    font-size: 20pt;
+    color: #F2F2F2;
+}
+
+#ad-text p{
+    font-size: 10pt;
+    color: lightgrey;
+}
+
+#ad button{
+    background-color: #F29855;
+    color: white;
+    height: 50px;
+    width: 120px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 45px;
+    margin-left: 250px;
+    border-radius: 5px;
+    border-color: #F29855;
+    font-size: 14pt;
+}
+    
+#footer {
+    width: 970px;
+}
+
+#foot-top{
+    display: inline-block;
+    width: 950px;
+    vertical-align: top;
+}
+
+#foot-top h4, #foot-top p{
+    margin: 5px;
+    padding: 2px;
+    display: inline-block;
+    width: 400px;
+}
+
+#foot-top h4{
+    color: whitesmoke;
+    font-family: cambria;
+    font-size: 16pt;
+}
+#foot-top p{
+    text-align: right;
+    margin-left: 100px;
+    font-style: italic;
+    color: #E36721;
+    font-size: 9pt;
+}
+
+.foot-nav{
+    width: 220px;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.foot-nav img{
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    border: 5px solid #363636;
+}
+
+.foot-nav h5, .foot-nav p{
+    width: 200px;
+    display: inline-block;
+    margin: 5px;
+    padding: 2px;
+}
+
+.foot-nav h5{
+    font-family: cambria;
+    color: #E36721;
+    font-size: 14pt;
+    height: 25px;
+}
+
+.foot-nav p{
+    font-size: 10pt;
+    height: 50px;
+    color: whitesmoke;
+}
+
+#footer span{
+    text-align: right;
+    display: inline-block;
+    margin: 5px;
+    width: 940px;
+    font-family: arial;
+    font-size: 9pt;
+    color: silver;
+}

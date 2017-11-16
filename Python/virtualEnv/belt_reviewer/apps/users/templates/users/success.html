@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>User Homepage</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Welcome {{user.first_name}}</h1>
+        <p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+        <p>Email: {{ user.email }}</p>
+        <p>Total reviews: number</p>
+        <hr>
+        <p><a href="{% url 'review:index' %}">All Reviews</a> | <a href="{% url 'review:add' %}">Add New Book and Review</a> | <a href="/logout">Log Out</a></p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>Default Blank Page~</h1>
+<p>Get to adding stuff</p>
+
+<h1>Write a new Review!</h1>
+<form action="/add" method="POST">
+    Reviwer Name: <input type="text" name="reviewerName" placeholder="Enter your name"><br><br>
+    Restaurant Name: <input type="text" name="restaurantName" placeholder="Enter restaurant name"><br><br>
+    Review: <br><textarea name="content" rows="5" cols="20" placeholder="Enter review"></textarea><br><br>
+    Date of visit: <input type="date" name="visitDate"><br><br>
+    Rating: <br><select name="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select><br><br>
+    <input type="submit" value="Add review!">
+</form>

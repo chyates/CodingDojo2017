@@ -1,0 +1,20 @@
+INITIAL SETUP
+    1. Setup database (unique columns as appropriate)
+    2. Create basic Flask project
+    3. Copy over mysqlconnection.py file
+    4. Setup sessions
+
+SETUP HTML
+    1. Main page with logout/login functionality
+    2. Login page
+    3. Verify routes (iteratively)
+    4. Implement basic route logic
+    5. Validation logic
+
+TARGET THE DATABSE
+    1. Insert users into the database (while updating session)
+    2. Implement login logic (while updating session)
+        a. Valid login
+        b. Invalid user
+        c. Invalid password
+    3. Test database constraints

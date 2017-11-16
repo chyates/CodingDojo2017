@@ -1,0 +1,18 @@
+@model dojoLeague.Models.Dojo
+
+<form action="/addDojo" method="POST">
+    <label for="Name">Name: </label>
+    <input asp-for="Name" type="text" name="name" placeholder="Enter a dojo name"><br>
+    <span asp-validation-for="Name"></span><br>
+
+    <label for="Location">Location: </label>
+    <input asp-for="Location" type="text" name="location" placeholder="Enter a location"><br>
+    <span asp-validation-for="Location"></span><br>
+
+    <label for="AddlInfo">Additional Info:</label><br>
+    <textarea name="addlInfo" rows="4" cols="50" placeholder="Add some optional information"></textarea><br>
+
+    <input type="submit" value="Add a Dojo">
+</form>
+<hr>
+<p><a href="/dojos">All Dojos</a> | <a href="/">All ninjas</a> | <a href="/ninjas/new">Add ninja</a></p>

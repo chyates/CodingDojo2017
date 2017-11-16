@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Add New User</title>
+    </head>
+    <body>
+    <div class="container">
+        <h2>Add a new user</h2>
+        <form action="/users/add" method="POST">
+            {% csrf_token %}
+            First name: <input type="text" name="first_name" placeholder="First name"><br><br>
+            Last name: <input type="text" name="last_name" placeholder="Last name"><br><br>
+            Email: <input type="email" name="email" placeholder="Email address"><br><br>
+            Password: <input type="password" name="password" placeholder="Password"><br><br>
+            Confirm password: <input type="password" name="confirm_password" placeholder="Confirm password"><br><br>
+            Admin level:<br><br><select name="admin_level" id="">
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select><br><br>
+            <input type="submit" value="Add new user">
+            <hr>
+            <p><a href="/dashboard">Return to Dashboard</a> | <a href="/logout">Log Out</a></p>
+        </form>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    </body>
+</html>

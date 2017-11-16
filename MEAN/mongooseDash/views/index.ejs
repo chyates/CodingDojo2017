@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Homepig</title>
+    </head>
+    <body>
+    <div class="container">
+        <h2>All pigs:</h2>
+        <% for (var p in pigs) { %>
+            <h5>Name: <a href="/pigs/<%= pigs[p]._id%>"><%= pigs[p].name %></a></h5>
+            <ul>
+                <li>Breed: <%= pigs[p].breed %></li>
+                <li>Weight: <%= pigs[p].weight %> lbs</li>
+                <li>Age: <%= pigs[p].age %> months</li>
+            </ul>
+        <% } %>
+        <hr>
+        <a href="/pigs/new">Add a new pig</a>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Add a new pig</title>
+    </head>
+    <body>
+    <div class="container">
+        <h2>Add a pig!</h2>
+        <form action="/pigs" method="POST">
+            Name: <br><input type="text" name="name" placeholder="Enter pig's name"><br><br>
+            Breed: <br><select name="breed">
+                <option value="Bearded pig">Bearded pig</option>
+                <option value="Warty pig">Warty pig</option>
+                <option value="Domestic pig">Domestic pig</option>
+                <option value="Teacup pig">Teacup pig</option>
+                <option value="Wild boar">Wild boar</option>
+            </select><br><br>
+            Weight (lbs): <input type="number" name="weight"><br><br>
+            Age (months): <input type="number" name="age"><br><br>
+            <input type="submit" value="Add Pig">
+        </form>
+        <hr>
+        <a href="/">Home</a>
+    </div>
+    </body>
+</html>

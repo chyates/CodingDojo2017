@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2>US Time Zone Display</h2>
+<button type="button"(click)="getDate('PST')" [ngClass]="{clicked: clicked === 'PST'}">PST</button>
+<button type="button" (click)="getDate('MST')" [ngClass]="{clicked: clicked === 'MST'}">MST</button>
+<button type="button" (click)="getDate('CST')" [ngClass]="{clicked: clicked === 'CST'}">CST</button>
+<button type="button" (click)="getDate('EST')" [ngClass]="{clicked: clicked === 'EST'}">EST</button><br><br>
+{{today | date: 'medium'}}
+

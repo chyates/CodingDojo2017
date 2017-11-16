@@ -1,0 +1,30 @@
+@model eCommerce.Models.Wrapper
+
+<p><a href="/dashboard">Dashboard</a> | <a href="/products">Products</a> | <a href="/orders">Orders</a> | <a href="/customers">Customers</a></p>
+
+@if(Model != null)
+{
+    @foreach(var product in Model.Products)
+    {
+        <div class="dash-product">
+            <img class="dash-product-pic" src="@product.ImageURL">
+            <p>@product.Name</p>
+            <li>@product.Quantity</li>
+        </div>
+    }
+    <a href="/products">See more...</a>
+    <hr>
+    <h3>Recent Orders: </h3>
+    @foreach(var order in Model.Orders)
+    {
+        <p>@order.Customer.Name purchased @order.Quantity @order.ProductName</p>
+    }
+    <a href="/orders">See more...</a>
+    <hr>
+    <h3>New Customers: </h3>
+    @foreach(var customer in Model.Customers)
+    {
+        <p>@customer.Name joined the store</p>
+    }
+    <a href="/customers">See more...</a>
+}

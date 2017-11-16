@@ -1,0 +1,10 @@
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\bin\Debug\netcoreapp1.1\LinqSkeleton.deps.json
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\bin\Debug\netcoreapp1.1\LinqSkeleton.runtimeconfig.json
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\bin\Debug\netcoreapp1.1\LinqSkeleton.runtimeconfig.dev.json
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\bin\Debug\netcoreapp1.1\LinqSkeleton.dll
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\bin\Debug\netcoreapp1.1\LinqSkeleton.pdb
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\obj\Debug\netcoreapp1.1\LinqSkeleton.csproj.CoreCompileInputs.cache
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\obj\Debug\netcoreapp1.1\LinqSkeleton.AssemblyInfoInputs.cache
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\obj\Debug\netcoreapp1.1\LinqSkeleton.AssemblyInfo.cs
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\obj\Debug\netcoreapp1.1\LinqSkeleton.dll
+C:\Users\chyat\Desktop\Dojo\C#\csharp_musicLinq\obj\Debug\netcoreapp1.1\LinqSkeleton.pdb

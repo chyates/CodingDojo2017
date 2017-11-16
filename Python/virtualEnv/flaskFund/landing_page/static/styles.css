@@ -1,0 +1,16 @@
+*{
+    margin: 5px;
+}
+
+h2 {
+    margin: 10px;
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+p ul li{
+    font-style: italic;
+}

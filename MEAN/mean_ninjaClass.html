@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+            // start Ninja Class I:
+            // --------------------
+            // should have attributes name, health, speed (private), strength (private)
+                // speed + strength are 3 by default, health is 100
+            // should have methods sayName(), showStats(), drinkSake
+                // sayName logs name; showStats logs strength, speed & health; drinkSake +10 to health
+            function Ninja(name){
+                var self = this;
+                this.name = name;
+                this.health = 100;
+                self.speed = 3;
+                self.strength = 3;
+                }
+                
+                Ninja.prototype.sayName = function(){
+                console.log("My ninja name is", this.name);
+                return this;
+                }
+                
+                Ninja.prototype.showStats = function(){
+                console.log("Health:", this.health, "Speed:", this.speed, "Strength:", this.strength);
+                return this;
+                }
+                
+                Ninja.prototype.drinkSake = function(){
+                this.health += 10;
+                return this;
+                }
+                
+                var bruce = new Ninja("Bruce");
+                // console.log(bruce.health);
+                // bruce.sayName();
+                bruce.sayName().drinkSake().showStats();
+
+                  // start Ninja Class II:
+                  // ---------------------
+
+                Ninja.prototype.punch = function(Ninja){
+                    Ninja.health -= 5;
+                    console.log(Ninja.name, "was punched by", this.name, "and lost 5 health!");
+                    }
+
+                Ninja.prototype.kick = function(Ninja){
+                    for (i=0; i<Ninja.strength; i++){
+                        Ninja.health -= 15;
+                    }
+                    return this;
+                    }
+
+                var bruce = new Ninja("Bruce");
+                var jet  = new Ninja("Jet");
+                bruce.punch(jet);
+                jet.showStats().drinkSake().drinkSake().showStats();
+                bruce.kick(jet);
+                jet.showStats();
+                //jet health: 100-5(punch)+10(sake)+10(sake)-45(kick) = 70                  
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

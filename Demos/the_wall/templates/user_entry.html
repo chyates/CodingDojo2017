@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Login and Registration</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="/authenticate" method="POST">
+            <label for="">Username</label><br>
+            <input type="text" name="html_username"><br>
+            <label for="">Password</label><br>
+            <input type="password" name="html_password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+
+        <hr>
+
+        <h1>Register</h1>
+        <form action="/register" method="POST">
+            <label for="">Username</label><br>
+            <input type="text" name="html_username"><br>
+            <label for="">Email</label><br>
+            <input type="email" name="html_email"><br>
+            <label for="">Password</label><br>
+            <input type="password" name="html_password"><br>
+            <label for="">Confirm Password</label><br>
+            <input type="password" name="html_confirm"><br><br>
+            <input type="submit" value="Register">
+        </form>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <hr>
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+{% endwith %}
+    </div>
+
+    </body>
+</html>

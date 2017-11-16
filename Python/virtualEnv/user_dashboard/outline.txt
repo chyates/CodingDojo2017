@@ -1,0 +1,83 @@
+------APPS------
+    Users--two levels, user and admin:
+        User level:
+            -Log in
+            -Register
+            -View profile
+            -Leave message
+            -Respond to other users' messages
+            -Edit their own profile
+        Admin level:
+            -User level functions
+            -Add new users
+            -Remove users
+            -Edit all user information
+
+------MODELS------
+Relationships:
+    -1 user can have many messages
+    -1 message can have many responses
+    -1 user can have many responses
+
+User:
+    First name, last name, email, password, created/updated @
+
+Message:
+    Content, created/updated @
+    FK: User
+
+Response:
+    Content, created/updated @
+    FK: Message
+    FK: User
+
+------VIEWS------
+
+==ALL LEVELS==
+/ (index): Register + login forms
+    -Render index template
+
+/register (register) and /login (login): Perform register/login functions
+    -Redirect to dashboard (or dashboard/admin depending on user access level)
+
+/dashboard (dashboard): Show all user information
+    -Render dashboard template
+        **If access level is admin, show admin dash rather than user
+
+==USER LEVEL==
+/users/show/<id> (profile): Show specific user information/messages + responses
+    -Render user template
+
+/users/edit (edit): Allow user to edit their own information
+    -Render editUser template
+
+/users/add_message (add_message): Perform add message function
+    -Redirect to /users/show/<id>
+
+/users/add_response (add_response): Perform add response function
+    -Redirect to /users/show/<id>
+
+==ADMIN LEVEL==
+/users/new (add): Add new user form
+    -Render newUser template
+
+/users/delete (delete): Confirm user deletion form
+    -Render deleteUser template
+
+/users/edit/<id> (admin_edit): Edit any user information
+    -Render editUser template w/ admin functionalities
+
+/users/destroy/<id> (destroy): Perform user deletion function 
+    -Redirect to /dashboard
+
+------TEMPLATES------
+Total number: 6
+
+-index
+-user
+-editUser
+    **Diff. view based on access level
+-dashboard
+    **Diff. view based on access level
+-newUser
+-deleteUser

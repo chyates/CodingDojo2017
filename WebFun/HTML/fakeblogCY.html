@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build A Bite</title>
+</head>
+<body>
+    <h1>Build-a-Bite</h1>
+    <h2>A service for the helpless baker</h2>
+    <img src="bab_logo.png" alt="Build a Bite logo"/><br><br>
+    <p>Do you have trouble just baking ready-make cookies? Do you need baked goods for a party?
+        Look no further than Build-a-Bite. Supply a recipe or ingredients and I will bake them for you!
+        Prices are based on the complexity of a recipe or the number of unique ingredients
+        (ie. ingredients that are not common to most recipes; see list below.)</p><br><br>
+    <h3>Common ingredients:</h3>
+    <ul>
+        <li>Butter</li>
+        <li>Sugar (white + brown)</li>
+        <li>Flour</li>
+        <li>Baking soda + powder</li>
+        <li>Eggs</li>
+        <li>Vanilla extract</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Cookie Price Sheet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Count</th>
+                <th>Rate</th>
+            </tr>
+            <tr>
+                <th colspan="2">Rates Per Batch</th>
+            </tr>
+            <tr>
+                <th>Min. 12, Max 48</th>
+                <th>$0.50/cookie</th>
+            </tr>
+            <tr>
+                <th colspan="2">Bulk Rates (min. 50)</th>
+            </tr>
+            <tr>
+                <th>One unique ingredient (ex. chocolate chip)</th>
+                <th>$0.30/cookie</th>
+            </tr>
+            <tr>
+                <th>Two unique ingredients (ex. banana chocolate chip)</th>
+                <th>$0.35/cookie</th>
+            </tr>
+            <tr>
+                <th>Three unique ingredients (ex. banana oatmeal chocolate chip)</th>
+                <th>$0.40/cookie</th>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <h3>Order Request Form</h3>
+    <form>
+        <label for="batch">How many do you need?</label>
+        <input type="text" id="batch">
+        <br><br>
+        
+        <label for="r_link">Recipe Link:</label>
+        <input type="text" id="r_link">
+        <br><br>
+
+        <input type="radio" id="cookie">
+        <label for="cookie">Cookies</label>
+        <input type="radio" id="brownie">
+        <label for="brownie">Brownies</label>
+        <input type="radio" id="cheesecake">
+        <label for="cheesecake">Cheesecake</label>
+        <br><br>
+
+        <label for="ing">Number of Unique Ingredients</label>
+        <select id="ing">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" id="c_chip" value="c_chip">
+        <label for="c_chip">Chocolate Chips</label>
+        <br>
+
+        <input type="checkbox" id="banana" value="banana">
+        <label for="banana">Banana</label>
+        <br>
+
+        <input type="checkbox" id="oatmeal" value="oatmeal">
+        <label for="oatmeal">Oatmeal</label>
+        <br>
+
+        <input type="checkbox" id="nuts" value="nuts">
+        <label for="nuts">Nuts</label>
+        <br>
+
+        <input type="checkbox" id="pb" value="pb">
+        <label for="pb">Peanut Butter</label>
+        <br>
+
+        <label for="u_other">Other (separate with comma):</label>
+        <textarea id="u_other"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+</html>

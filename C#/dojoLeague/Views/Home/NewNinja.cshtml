@@ -1,0 +1,38 @@
+@model dojoLeague.Models.Ninja
+
+<form action="/addNinja" method="POST">
+    <label for="Name">Name: </label>
+    <input asp-for="Name" type="text" name="name" placeholder="Enter a ninja name"><br>
+    <span asp-validation-for="Name"></span><br>
+
+    <label for="Level">Level: </label>
+    <select asp-for="Level" name="level">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <span asp-validation-for="Level"></span><br>
+
+    <label for="DojoName">Dojo Name</label>
+    <select asp-for="DojoName" name="dojoName">
+        @foreach(var dojo in ViewBag.Dojos)
+        {
+            <option value="@dojo.Name">@dojo.Name</option>
+        }
+        <option value="Rogue">Rogue</option>
+    </select><br>
+
+    <label for="Description">Description:</label><br>
+    <textarea name="Description" rows="4" cols="50" placeholder="Add an optional description"></textarea><br>
+
+    <input type="submit" value="Add a Ninja">
+</form>
+<hr>
+<p><a href="/dojos">All Dojos</a> | <a href="/">All ninjas</a> | <a href="/dojos/new">Add dojo</a></p>

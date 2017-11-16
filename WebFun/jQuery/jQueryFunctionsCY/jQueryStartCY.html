@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="jQStart_styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>JQuery Functions</title>
+</head>
+
+<body>
+    <h1>Basic JQuery Functions</h1>
+    <div id="click">
+        <h2>Click Me</h2>
+    </div>
+    <div>
+        <p id="hide">Hide</p>
+    </div>
+    <div>
+        <h2 id="show">Show</h2>
+    </div>
+    <div>
+        <button id="b1">Toggle</button>
+        <p class="test">Seen</p>
+        <p class ="test" style="display: none">Unseen</p>
+    </div>
+    <div >
+        <h2 class="slide-up">Slide Up</h2>    
+    </div>
+    <div>
+        <h2 class="slide-down">Slide Down</h2>
+    </div>
+    <div >
+        <h2 id="slide-toggle">Slide Toggle</h2>
+    </div>
+    <div >
+        <button id="b3">Fade In</button>
+        <h2 id="fade-in" style="display: none">Fade In</h2>
+    </div>
+    <div >
+        <button id="b4">Fade Out</button>
+        <h2 id="fade-out">Fade Out</h2>
+    </div>
+    <div >
+        <h2 id="add-class">Add Class</h2>
+    </div>
+    <div >
+        <h2 id="before">Before</h2>
+    </div>
+    <div >
+        <h2 id="after">After</h2>
+    </div>
+    <div >
+        <h2 id="append">Append</h2>
+    </div>
+    <div >
+        <h2 id="html">HTML</h2>
+    </div>
+    <div>
+        <button id="b5">Attribute</button>
+        <h2 id="attr">Attribute</h2>
+    </div>
+    <div >
+        <p id="p2">Name: <input type="text" name="user"></p>
+        <button id="val">Set the value of the input field</button>
+    </div>
+    <div >
+        <h2 id="text">Text</h2>
+    </div>
+    <div >
+        <h2 id="data">Data</h2>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        console.log('ready!');
+        $('#click').click(function () {
+            alert('Message clicked.');
+        })
+        $('#hide').click(function(){
+            $("#hide").hide('slow');
+        })
+        $('#show').click(function(){
+            $("#show").hide('slow')
+            $("#show").show('slow');
+        })
+        $('#b1').click(function(){
+            $(".test").toggle();
+        })
+        $(".slide-up").click(function(){
+            $(".slide-up").slideUp('slow');
+        });
+        $(".slide-down").click(function(){
+            $(".slide-down").slideUp('slow')
+            $(".slide-down").slideDown('slow');
+        });
+        $("#slide-toggle").click(function(){
+             $("#slide-toggle").slideToggle('slow');
+        });
+        $("#b3").click(function(){
+            $("#fade-in").fadeIn(3000);
+        });
+         $("#b4").click(function(){
+            $("#fade-out").fadeOut(3000);
+        });
+        $("#add-class").click(function(){
+            $("#add-class").addClass("ac-1");
+        });
+        $("#before").click(function(){
+            $("#before").before("<p>(Before)</p>");
+        });
+        $("#after").click(function(){
+            $("#after").after("<p>(After)</p>");
+        });
+        $("#append").click(function(){
+            $("#append").append("<p>Appendix</p>");
+        });
+        $("#html").click(function(){
+            $("#html").html("HTM-ello!");
+        });
+        $("#b5").click(function(){
+            $("#attr").attr("style","font-style: italic");
+        });
+        $("#val").click(function(){
+            $("input:text").val("Jane Eyre");
+        });
+        $("#text").click(function(){
+            $("#text").text("Clarice...");
+        });
+    }
+    )
+
+</script>
+
+</html>

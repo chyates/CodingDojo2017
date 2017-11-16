@@ -1,0 +1,30 @@
+@model eCommerce.Models.Product
+
+<p><a href="/dashboard">Dashboard</a> | <a href="/products">Products</a> | <a href="/orders">Orders</a> | <a href="/customers">Customers</a></p>
+
+<div>
+    <form action="/products/new" method="POST">
+        <label for="Name">Name:</label>
+        <input asp-for="Name" type="text" name="name" placeholder="Enter a name"><br><br>
+
+        <label for="ImageURL">Image URL:</label>
+        <input asp-for="ImageURL" type="text" name="imageURL"><br><br>
+
+        <label for="Description">Description:</label>
+        <textarea asp-for="Description" name="description" rows="4" cols="50"></textarea><br><br>
+
+        <label for="Quantity">Quantity</label>
+        <input asp-for="Quantity" name="quantity" type="number"><br><br>
+
+        <input type="submit" value="Create product">
+    </form>
+</div>
+
+@foreach(var product in ViewBag.Products)
+{
+    <div>
+        <img src="@product.ImageURL">
+        <p>@product.Name</p>
+        <li>@product.Quantity left</li>
+    </div>
+}

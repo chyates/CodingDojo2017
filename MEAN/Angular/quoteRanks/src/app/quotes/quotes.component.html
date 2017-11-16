@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="info">
+    <p>"{{ content }}"</p>
+    <p>--{{ author }}</p>
+    <p>+{{ rating }}</p>
+  </div>
+  <div class="buttons">
+    <button (click)="upvote($event, index)" value="up">Vote Up</button>
+    <button (click)="downvote($event, index)" value="down">Vote Down</button>
+    <button>Delete</button>
+  </div>
+</div>

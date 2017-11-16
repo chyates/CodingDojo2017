@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="jQueryNinjasCY_styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Same Pic of Dave Coulier</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="pics">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+            <img class="pics" src="dave_coulier.jpg" alt="dave coulier">
+        </div>
+        <button id="b4">Restore</button>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("img").click(function () {
+            $(this).fadeTo(600, 0.0);
+        });
+        $("#b4").click(function() {
+            $("img.pics").fadeTo(600, 1.0);
+        })
+    });
+
+</script>
+
+</html>

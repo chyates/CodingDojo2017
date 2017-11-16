@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>Form Results</title>
+    </head>
+    <body>
+    <div class="container">
+        <h2>Submitted Info</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Dojo Location</th>
+                    <th>Favorite Language</th>
+                    <th>Comments?</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for survey in session['summaries'] %}
+                <tr>
+                    <td>{{survey['your_name']}}</td>
+                    <td>{{survey['location']}}</td>
+                    <td>{{survey['fav_lang']}}</td>
+                    <td>{{survey['comments']}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>

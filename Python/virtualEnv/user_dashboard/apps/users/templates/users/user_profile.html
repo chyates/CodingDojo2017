@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>User information</title>
+    </head>
+    <body>
+    <div class="container">
+        <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+        <p>Registered at: {{ user.created_at }}</p>
+        <p>User ID: #{{ user.id }}</p>
+        <p>Email address: {{ user.email }}</p>
+        <h3>Leave a message for {{ user.first_name }}</h3>
+        {% if user.id != request.session.id %}
+        <form action="/users/{{user.id}}/add_message", method="POST">
+            {% csrf_token %}
+            <textarea name="message" id="" cols="40" rows="6"></textarea><br><br>
+            <input type="submit" value="Post">
+        </form>
+        {% endif %}
+        {% for message in messages %}
+            {% if message.posted_on == user.id %}
+                <p>{{message.poster.first_name}} wrote:</p>
+                <p>{{message.content}}</p>
+                {% for response in responses %}
+                    {% if response.message_id == message.id %}
+                        <p>{{ response.responder.first_name }} responded:</p>
+                        <p>{{ response.content }}</p>
+                    {% endif %}
+                {% endfor %}
+                <form action="/message/{{ message.id }}/respond" method="POST">
+                    {%csrf_token%}
+                    <textarea name="response" id="" cols="40" rows="3"></textarea><br><br>
+                    <input type="submit" value="Leave a response"><br><br>
+                </form>
+                {% endif %}
+        {% endfor %}
+        <hr>
+        <p><a href="/dashboard">Home</a> | <a href="/logout">Log Out</a></p>
+    </div>
+    </body>
+</html>

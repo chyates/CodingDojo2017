@@ -1,0 +1,15 @@
+@model user_dashboard.Models.RegisterViewModel
+
+<h1>Log In</h1>
+
+<form action="" method="POST">
+    <label for="Email">Email:</label>
+    <input asp-for="Email" type="Email" name="Email">
+    <span asp-validation-for="Email"></span>
+
+    <label for="Password">Password:</label>
+    <input asp-for="Password" type="password" name="Password">
+    <span asp-validation-for="Password"></span>
+
+    <input type="submit" name="Log in!">
+</form>

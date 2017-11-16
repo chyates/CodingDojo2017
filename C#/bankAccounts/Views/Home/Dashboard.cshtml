@@ -1,0 +1,44 @@
+@model bankAccounts.Models.Wrapper
+
+<h1>Welcome, @ViewBag.User.FirstName!</h1>
+
+@if(Model != null)
+{
+    <h2>Current balance: $@ViewBag.Account.Balance</h2>
+
+    <form action="/deposit" method="POST">
+        Deposit: <input type="number" name="amount">
+        <input type="submit" value="Deposit"><br><br>
+    </form>
+
+    <form action="/withdraw" method="POST">
+        Withdraw: <input type="number" name="amount">
+        <input type="submit" value="Withdraw"><br><br>
+    </form>
+    <hr>
+
+    @if(TempData["WithdrawError"] != null)
+    {
+        <li>@TempData["WithdrawError"]</li>
+    }
+
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var transaction in ViewBag.Account.Transactions)
+            {
+            <tr>
+                <td>@transaction.Amount</td>
+                <td>@transaction.Type</td>
+                <td>@transaction.Date</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}

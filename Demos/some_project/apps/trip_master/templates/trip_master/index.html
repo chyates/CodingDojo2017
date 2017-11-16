@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>TRIP MASTER!</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Your Trips</h1>
+
+        <form action="/add_city" method="POST">
+            {% csrf_token %}
+            <label for="">City Name</label>
+            <input type="text" name="html_city">
+            <input type="submit">
+            <a href="/reset_trips">Clear all</a>
+        </form>
+        
+        
+        <hr/>
+
+        <table>
+            <tr>
+                <th>City Name</th>
+                <th>Details</th>
+            </tr>
+
+            {% for city in context_cities %}
+
+            <tr>
+                <td>{{city}}</td>
+                <td><a href="/details/{{city}}">Details</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    </body>
+</html>

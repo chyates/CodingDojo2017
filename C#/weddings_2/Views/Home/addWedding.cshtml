@@ -1,0 +1,29 @@
+@model weddings_2.Models.AuctionViewModel
+
+<h2>New Wedding</h2>
+<p><a href="/dashboard">Dashboard</a> | <a href="/logout">Logout</a></p>
+<form action="/addWedding" method="POST">
+    <label for="WedderOne">Wedder One</label><br>
+    <input asp-for="WedderOne" name="WedderOne" type="text" placeholder="Enter a first wedder"><br>
+    <span asp-validation-for="WedderOne"></span><br>
+
+    <label for="WedderTwo">Wedder Two</label><br>
+    <input asp-for="WedderTwo" name="WedderTwo" type="text" placeholder="Enter a second wedder"><br>
+    <span asp-validation-for="WedderTwo"></span><br>
+
+    <label for="Address">Address</label><br>
+    <input asp-for="Address" name="Address" type="text" placeholder="Enter an address"><br>
+    <span asp-validation-for="Address"></span><br>
+
+    <label for="Date">Date</label><br>
+    <input asp-for="Date" name="Date" type="date"><br>
+    <span asp-validation-for="Date"></span><br>
+    @{
+        if(TempData["InvalidDate"] != null)
+        {
+            <small class="error-message form-text text-muted">@TempData["InvalidDate"]</small><br>
+        }
+    }
+    <button type="submit" class="btn btn-primary">Create Auction</button>
+</form>
+

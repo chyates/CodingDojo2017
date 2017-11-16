@@ -1,0 +1,23 @@
+pip install Django
+	Successfully installed Django
+
+pip list
+	Displays a list of packages that have been installed
+
+pip install Django (repeat)
+	Shows where pip installs the packages
+
+pip freeze
+	Displays all the packages that have been installed but in requirements format, aka how pip interprets what it needs to install those requirements
+
+pip freeze > requirements.txt
+	Creates a file with all of the installed packages and their versions
+
+pip show Django
+	Shows information about an installed package
+
+pip uninstall Django
+	Lists everything that pip is going to install and then asks if I really want to uninstall it
+
+pip search Flask
+	Returns everything with Flask in the name or description

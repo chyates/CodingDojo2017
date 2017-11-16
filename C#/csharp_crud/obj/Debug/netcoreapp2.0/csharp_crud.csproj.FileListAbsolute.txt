@@ -1,0 +1,10 @@
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\bin\Debug\netcoreapp2.0\csharp_crud.deps.json
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\bin\Debug\netcoreapp2.0\csharp_crud.runtimeconfig.json
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\bin\Debug\netcoreapp2.0\csharp_crud.runtimeconfig.dev.json
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\bin\Debug\netcoreapp2.0\csharp_crud.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\bin\Debug\netcoreapp2.0\csharp_crud.pdb
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\obj\Debug\netcoreapp2.0\csharp_crud.csproj.CoreCompileInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\obj\Debug\netcoreapp2.0\csharp_crud.AssemblyInfoInputs.cache
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\obj\Debug\netcoreapp2.0\csharp_crud.AssemblyInfo.cs
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\obj\Debug\netcoreapp2.0\csharp_crud.dll
+C:\Users\chyat\desktop\dojo\c#\csharp_crud\obj\Debug\netcoreapp2.0\csharp_crud.pdb

@@ -1,0 +1,53 @@
+@model eCommerce.Models.Order
+
+<p><a href="/dashboard">Dashboard</a> | <a href="/products">Products</a> | <a href="/orders">Orders</a> | <a href="/customers">Customers</a></p>
+
+<h3>Add a new order:</h3>
+<form action="/orders/new" method="POST">
+    <label for="CustomerName">Customer:</label>
+    <select asp-for="CustomerName" name="customerName">
+        @foreach(var customer in ViewBag.Customers)
+        {
+            <option value="@customer.Name">@customer.Name</option>
+        }
+    </select>
+
+    <label for="Quantity">Amount</label>
+    <input asp-for="Quantity" type="number" name="Quantity">
+    @if(TempData["QuantityError"] != null)
+    {
+        <li>@TempData["QuantityError"]</li>
+    }
+
+    <label for="ProductName">Product:</label>
+    <select asp-for="ProductName">
+        @foreach(var product in ViewBag.Products)
+        {
+            <option value="@product.Name">@product.Name</option>
+        }
+    </select>
+
+    <input type="submit" value="Order">
+</form><br><br>
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Purchase Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var order in ViewBag.Orders)
+    {
+        <tr>
+            <td>@order.CustomerName</td>
+            <td>@order.ProductName</td>
+            <td>@order.Quantity</td>
+            <td>@order.Date.ToString("D")</td>
+        </tr>
+    }
+    </tbody>
+</table>
