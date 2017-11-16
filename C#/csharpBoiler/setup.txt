@@ -34,3 +34,5 @@ PACKAGED WITHIN PARENT PROJECT FOLDER:
     --RegisterViewModel.cs
     --User.cs
     --Wrapper.cs
+
+Test commit change
