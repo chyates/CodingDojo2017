@@ -40,7 +40,7 @@
 <form asp-controller="Home" asp-action="Login" method="POST">
     <div class="form-group">
         <label for="Email">Email</label>
-        <input name="Email" type="text" aria-describedby="nameHelp" class="form-control" id="Email" placeholder="Enter email">
+        <input asp-for="Email" name="Email" type="text" aria-describedby="nameHelp" class="form-control" id="Email" placeholder="Enter email">
             @{
                 if(TempData["EmailError"] != null){
                         <small id="nameHelp" class="error-message form-text text-muted">@TempData["EmailError"]</small>
