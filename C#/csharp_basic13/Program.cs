@@ -128,6 +128,218 @@ namespace csharp_basic13
             }
             return arr;
         }
+
+        public static string findStateName(string zipCode)
+        {
+            int numZip = Int32.Parse(zipCode);
+            string fullName = "";
+            if (numZip >= 35004 && numZip <= 36925)
+            {
+                fullName = "Alabama";
+            }
+            else if (numZip >= 99501 && numZip <= 99950)
+            {
+                fullName = "Alaska";
+            }
+            else if ((numZip >= 71601 && numZip <= 75929) || numZip == 75502)
+            {
+                fullName = "Arkansas";
+            }
+            else if (numZip >= 85001 && numZip <= 86556)
+            {
+                fullName = "Arizona";
+            }
+            else if (numZip >= 90001 && numZip <= 96162)
+            {
+                fullName = "California";
+            }
+            else if (numZip >= 80001 && numZip <= 81658)
+            {
+                fullName = "Colorado";
+            }
+            else if (numZip >= 6001 && numZip <= 6389)
+            {
+                fullName = "Connecticut";
+            }
+            else if (numZip >= 20001 && numZip <= 20799)
+            {
+                fullName = "Washington, D.C.";
+            }
+            else if (numZip >= 19701 && numZip <= 19980)
+            {
+                fullName = "Delaware";
+            }
+            else if (numZip >= 32004 && numZip <= 34997)
+            {
+                fullName = "Florida";
+            }
+            else if ((numZip >= 30001 && numZip <= 31999) || numZip == 39901)
+            {
+                fullName = "Georgia";
+            }
+            else if (numZip >= 96701 && numZip <= 96898)
+            {
+                fullName = "Hawaii";
+            }
+            else if ((numZip >= 50001 && numZip <= 52809) || (numZip >= 68119 && numZip <= 68120))
+            {
+                fullName = "Iowa";
+            }
+            else if (numZip >= 83201 && numZip <= 83876)
+            {
+                fullName = "Idaho";
+            }
+            else if (numZip >= 60001 && numZip <= 62999)
+            {
+                fullName = "Illinois";
+            }
+            else if (numZip >= 46001 && numZip <= 47997)
+            {
+                fullName = "Indiana";
+            }
+            else if (numZip >= 66002 && numZip <= 67954)
+            {
+                fullName = "Kansas";
+            }
+            else if (numZip >= 40003 && numZip <= 42788)
+            {
+                fullName = "Kentucky";
+            }
+            else if ((numZip >= 70001 && numZip <= 71232) || (numZip >= 71234 && numZip <= 71497))
+            {
+                fullName = "Louisiana";
+            }
+            else if ((numZip >= 1001 && numZip <= 2791) || (numZip >= 5501 && numZip <= 5544))
+            {
+                fullName = "Massachusetts";
+            }
+            else if (numZip == 20331 || (numZip >= 20335 && numZip <= 20797) || (numZip >= 20812 && numZip <= 21930))
+            {
+                fullName = "Maryland";
+            }
+            else if (numZip >= 3901 && numZip <= 4992)
+            {
+                fullName = "Maine";
+            }
+            else if (numZip >= 48001 && numZip <= 49971)
+            {
+                fullName = "Michigan";
+            }
+            else if (numZip >= 55001 && numZip <= 56763)
+            {
+                fullName = "Minnesota";
+            }
+            else if (numZip >= 63001 && numZip <= 65899)
+            {
+                fullName = "Missouri";
+            }
+            else if ((numZip >= 38601 && numZip <= 39776) || numZip == 71233)
+            {
+                fullName = "Mississippi";
+            }
+            else if (numZip >= 59001 && numZip <= 59937)
+            {
+                fullName = "Montana";
+            }
+            else if (numZip >= 27006 && numZip <= 28909)
+            {
+                fullName = "North Carolina";
+            }
+            else if (numZip >= 58001 && numZip <= 58856)
+            {
+                fullName = "North Dakota";
+            }
+            else if ((numZip >= 68001 && numZip <= 68118) || (numZip >= 68122 && numZip <= 69367))
+            {
+                fullName = "Nebraska";
+            }
+            else if (numZip >= 3031 && numZip <= 3897)
+            {
+                fullName = "New Hampshire";
+            }
+            else if (numZip >= 7001 && numZip <= 8989)
+            {
+                fullName = "New Jersey";
+            }
+            else if (numZip >= 87001 && numZip <= 88441)
+            {
+                fullName = "New Mexico";
+            }
+            else if (numZip >= 88901 && numZip <= 89883)
+            {
+                fullName = "Nevada";
+            }
+            else if (numZip == 6390 || (numZip >= 10001 && numZip <= 14975))
+            {
+                fullName = "New York";
+            }
+            else if (numZip >= 43001 && numZip <= 45999)
+            {
+                fullName = "Ohio";
+            }
+            else if ((numZip >= 73001 && numZip <= 73199) || (numZip >= 73401 && numZip <= 74966))
+            {
+                fullName = "Oklahoma";
+            }
+            else if (numZip >= 97001 && numZip <= 97920)
+            {
+                fullName = "Oregon";
+            }
+            else if (numZip >= 15001 && numZip <= 19640)
+            {
+                fullName = "Pennsylvania";
+            }
+            else if (numZip >= 2801 && numZip <= 2940)
+            {
+                fullName = "Rhode Island";
+            }
+            else if (numZip >= 29001 && numZip <= 29948)
+            {
+                fullName = "South Carolina";
+            }
+            else if (numZip >= 57001 && numZip <= 57799)
+            {
+                fullName = "South Dakota";
+            }
+            else if (numZip >= 37010 && numZip <= 38589)
+            {
+                fullName = "Tennessee";
+            }
+            else if (numZip == 73301 || (numZip >= 75001 && numZip <= 75501) || (numZip >= 75503 && numZip <= 79999) || (numZip >= 88510 && numZip <= 88589))
+            {
+                fullName = "Texas";
+            }
+            else if (numZip >= 84001 && numZip <= 84784)
+            {
+                fullName = "Utah";
+            }
+            else if (numZip >= 20040 && numZip <= 24658)
+            {
+                fullName = "Virginia";
+            }
+            else if ((numZip >= 5001 && numZip <= 5495) || (numZip >= 5601 && numZip <= 5907))
+            {
+                fullName = "Vermont";
+            }
+            else if (numZip >= 98001 && numZip <= 99403)
+            {
+                fullName = "Washington";
+            }
+            else if (numZip >= 53001 && numZip <= 54990)
+            {
+                fullName = "Wisconsin";
+            }
+            else if (numZip >= 24701 && numZip <= 26886)
+            {
+                fullName = "West Virginia";
+            }
+            else if (numZip >= 82001 && numZip <= 83128)
+            {
+                fullName = "Wyoming";
+            }
+            return fullName;
+        }
+
         public static void Main(string[] args)
         {
             // print1To255();
@@ -137,7 +349,7 @@ namespace csharp_basic13
             // printArray(myArr);
             // findMax(myArr);
             // findAvg(myArr);
-            Console.WriteLine(createOddArray());
+            // Console.WriteLine(createOddArray());
             // greaterThanY(myArr, 5);
             // squareValsArray(myArr);
             // elimNegValsArray(myArr);
@@ -145,6 +357,7 @@ namespace csharp_basic13
             // shiftLeft(myArr);
             // object[] myArr2 = new object[] {1,5,-7, 4, -11};
             // replaceString(myArr2);
+            Console.WriteLine(findStateName("03901"));
         }
     }
 }

@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chyat\\desktop\\dojo\\c#\\csharp_basic13\\csharp_basic13.csproj",
+      "projectUniqueName": "C:\\Users\\chyat\\Desktop\\Dojo\\C#\\csharp_basic13\\csharp_basic13.csproj",
       "projectName": "csharp_basic13",
-      "projectPath": "C:\\Users\\chyat\\desktop\\dojo\\c#\\csharp_basic13\\csharp_basic13.csproj",
+      "projectPath": "C:\\Users\\chyat\\Desktop\\Dojo\\C#\\csharp_basic13\\csharp_basic13.csproj",
       "packagesPath": "C:\\Users\\chyat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chyat\\desktop\\dojo\\c#\\csharp_basic13\\obj\\",
+      "outputPath": "C:\\Users\\chyat\\Desktop\\Dojo\\C#\\csharp_basic13\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
