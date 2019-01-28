@@ -110,7 +110,7 @@ namespace csharp_basic13
                 }
             }
             int avg = sum / arr.Length;
-            Console.WriteLine($"The maximum is {max}, the minimum is {min}, and the average is {avg}");
+            Console.WriteLine("{0}, {1}, {2}", min, max, avg);
         }
         // write function that shifts values in an array to the left; add 0 to the end
         public static void shiftLeft(int[] arr){

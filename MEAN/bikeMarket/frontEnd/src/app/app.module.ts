@@ -11,6 +11,7 @@ import { ListingUpdateComponent } from './listing-update/listing-update.componen
 import { UserContactComponent } from './user-contact/user-contact.component';
 import { UserComponent } from './user/user.component';
 import { ListingApiService } from './listing-api.service';
+import { UserTestComponent } from './user/user-test/user-test.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ListingApiService } from './listing-api.service';
     ListingUpdateComponent,
     UserContactComponent,
     UserComponent,
+    UserTestComponent,
   ],
   imports: [
     BrowserModule,
